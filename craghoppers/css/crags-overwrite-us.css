@@ -1,0 +1,22 @@
+.redeyeproductpage {
+	display: none;
+}
+
+/* ******** US ONLY - DO NOT COPY ONTO UK *********** */
+/* Temporary fix to hide UK PostCodeAnywhere Autocomplete div showing on the US */
+
+.pcaAutoComplete, .pcaAutoCompleteSmall {
+	display:none !important;
+}
+
+#checkout-step-shipping .region {
+	display: block !important;
+}
+
+label[for="billing:use_for_shipping_no"] {
+	background: none;
+}
+
+label[for="billing:use_for_shipping_no"]:after {
+	content: ' ';
+}

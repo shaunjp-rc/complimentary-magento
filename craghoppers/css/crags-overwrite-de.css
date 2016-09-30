@@ -1,0 +1,48 @@
+/******* German Specific Styles *********** */
+
+.technologiespopuplefthandside {
+	display: none;
+}
+
+.technologiespopuplefthandside-de {
+	display: block;
+}
+
+label[for="billing:use_for_shipping_no"]:after {
+	display: none !important;
+}
+
+.checkout-cart-index .worldwidedeliverybasket {
+	display: none;
+}
+
+#checkout-shipping-method-load .shipment-methods dt {
+	display: none;
+}
+
+.opc .step-title h2, 
+.opc .allow .step-title h2, 
+.opc .active .step-title h2,
+.opc .allow .step-title h2 {
+	font-size: 9px !important;
+}
+
+.deliveryBar {
+	height: 24px;
+}
+
+.deliveryBar .newsletterbttn img {
+	float: right;
+}
+
+.newsletterbttn {
+    margin-top: 0;
+}
+
+label[for="billing:use_for_shipping_no"] {
+	background: none;
+}
+
+label[for="billing:use_for_shipping_no"]:after {
+	content: ' ';
+}
