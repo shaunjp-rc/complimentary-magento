@@ -235,7 +235,11 @@
 	background-color: #383838;
 	color: #fff !important;
 	text-decoration: underline;
-	padding: 6px 6px 0 0;
+	padding: 6px 24px 0 0;
+}
+
+.kitGuideWidgetSlideClose:after {
+	content: '\2192';
 }
 
 #kitGuideWidgetSlideOut .kitGuideWidgetTab:hover {
@@ -304,11 +308,16 @@
 
 @media screen and (max-width: 770px) {
 
+	.wrapper {
+		padding-top: 48px;
+	}
+
 	#kitGuideWidgetSlideOut {
-		position: absolute;
+		position: fixed;
 		top: 0;
-		right: 50%;
+		right: 0;
 		width: 100%;
+		z-index: 10;
 	}
 
 	#kitGuideWidgetSlideOut .kitGuideWidgetTab {
@@ -318,7 +327,23 @@
 		-ms-transform: rotate(0deg);
 		transform: rotate(0deg);
 		margin-left: 0;
-		top: 0;
+		top: auto;
+		bottom: -42px;
+		width: 100%;
+		text-align: center;
+	}
+
+	.kitGuideIconTab {
+		-moz-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+		vertical-align: bottom;
+	}
+
+	.kitGuideWidgetSlideClose:after {
+		content: '\2191';
 	}
 
 	#kitGuideWidgetSlideOut {
