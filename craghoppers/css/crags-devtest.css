@@ -22,7 +22,7 @@
 
 .kitGuideWidget .kitGuideButton--getStarted {
 	float: none;
-	width: 168px;
+	width: 200px;
 	margin: 0 auto;
 }
 
@@ -204,6 +204,7 @@
 	width: 60%;
 	background: #383838;
 	color: #fff;
+	z-index: 100;
 }
 
 #kitGuideWidgetSlideOut .kitGuideWidgetTab {
@@ -269,7 +270,7 @@
 }
 
 #kitGuideWidgetSlideOut fieldset {
-	float: left;
+	/*float: left;*/
 	background-color: #383838;
 	width: 100%;
 }
@@ -360,6 +361,7 @@
 		-o-transform: translateX(0) translateY(0);
 		-ms-transform: translateX(0) translateY(0);
 		transform: translateX(0) translateY(0);
+		position: static;
 	}
 }
 
