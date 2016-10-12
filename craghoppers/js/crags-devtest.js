@@ -9,7 +9,7 @@ $j(document).ready(function($) {
   $j('.kitGuideButton--getStarted').on('click', function(){
     $j('.kitGuideForm').css('display', 'block');
     $j('.kitGuideForm__fieldset--focus').slideDown(500, function(){
-      if ($j('#kitGuideWidgetSlideOut').length) {
+      if ($j('#kitGuideWidgetSlideOut').length && $j(window).width() > 770) {
         $j('.kitGuideWidget').slideUp(500);
       }
     });
@@ -20,19 +20,21 @@ $j(document).ready(function($) {
   $j('#focusActivity').on('click', function(){
     $j('.kitGuideForm__fieldset--travel, .kitGuideForm__fieldset--gender').slideUp(500);
     $j('.kitGuideForm__fieldset--activity').slideDown(500, function(){
-      if ($j('#kitGuideWidgetSlideOut').length) {
+      if ($j('#kitGuideWidgetSlideOut').length && $j(window).width() > 770) {
         $j('.kitGuideForm__fieldset--focus').slideUp(500);
       }
     });
+    localStorage.setItem('kitGuideFocus', 'activity');
   });
 
   $j('#focusTravel').on('click', function(){
     $j('.kitGuideForm__fieldset--activity, .kitGuideForm__fieldset--gender').slideUp(500);
     $j('.kitGuideForm__fieldset--travel').slideDown(500, function(){
-      if ($j('#kitGuideWidgetSlideOut').length) {
+      if ($j('#kitGuideWidgetSlideOut').length && $j(window).width() > 770) {
         $j('.kitGuideForm__fieldset--focus').slideUp(500);
       }
     });
+    localStorage.setItem('kitGuideFocus', 'travel');
   });
 
   // $j('#focusEveryday').on('click', function(){
@@ -43,11 +45,31 @@ $j(document).ready(function($) {
 
   //next step selections
   $j('.kitGuideButton--next').on('click', function(){
-    $j('.kitGuideForm__fieldset--gender').slideDown(500, function(){
-      if ($j('#kitGuideWidgetSlideOut').length) {
-        $j('.kitGuideForm__fieldset--travel, .kitGuideForm__fieldset--activity').slideUp(500);
+
+    var getAllActivityInputs = $j('input[name="activity"], input[name="travel"]');
+
+    for (var i=0; i < getAllActivityInputs.length; i++) {
+
+      if (getAllActivityInputs[i].checked) {
+        
+        $j('.kitGuideForm__fieldset--gender').slideDown(500, function(){
+          if ($j('#kitGuideWidgetSlideOut').length && $j(window).width() > 770) {
+            $j('.kitGuideForm__fieldset--travel, .kitGuideForm__fieldset--activity').slideUp(500);
+          }
+        });
+        var nothingSelected = false;
+        break;
+
+      } else {
+        var nothingSelected = true;
       }
-    });
+    }
+    
+    if (nothingSelected === true) {
+      $j($j('.kitGuideButton--next')).before('<p class="kitGuideErrorMessage">Please select an option from the list above.</p>')
+      $j('.kitGuideErrorMessage').slideDown(400);
+    }
+    
   });
 
   $j('.kitGuideForm__fieldset--gender input').on('click', function(){
@@ -57,11 +79,15 @@ $j(document).ready(function($) {
   // reset travel or activity if both are used
 
   $j('.kitGuideForm__fieldset--travel input').on('click', function(){
-    $('input[name="activity"]').prop('checked', false);
+    $j('input[name="activity"]').prop('checked', false);
+    $j('.kitGuideErrorMessage').slideUp(400);
+    $j('.kitGuideErrorMessage').remove();
   });
   
   $j('.kitGuideForm__fieldset--activity input').on('click', function(){
-    $('input[name="travel"]').prop('checked', false);
+    $j('input[name="travel"]').prop('checked', false);
+    $j('.kitGuideErrorMessage').slideUp(400);
+    $j('.kitGuideErrorMessage').remove();
   });
 
   $j('.kitGuideButton--reset').on('click', function(){
@@ -71,6 +97,7 @@ $j(document).ready(function($) {
       }
     });
     $j('.kitGuideForm__helpText, .kitGuideButton--submit, .kitGuideForm__fieldset--gender .kitGuideButton--reset').fadeOut(100);
+    $j('.kitGuideErrorMessage').remove();
   });
 
 
@@ -81,7 +108,7 @@ $j(document).ready(function($) {
     //get form values and add to array
     var kitGuideAnswers = $j(this).serializeArray();
 
-    event.preventDefault();
+    //event.preventDefault();
 
 
     //get individual objects
@@ -101,13 +128,16 @@ $j(document).ready(function($) {
 
     //get values & build URL
     var kitUrlGender = kitAnswerGender[0].value;
+    localStorage.setItem('kitGuideGender', kitUrlGender);
 
     if (kitAnswerTravel.length) {
       var kitUrlTravel = '-' + kitAnswerTravel[0].value;
       var kitUrlFinal = 'http://www.craghoppers.com/' + kitUrlGender + kitUrlTravel;
+      localStorage.setItem('kitGuideClimate', kitAnswerTravel[0].value);
     } else if (kitAnswerActivity.length) {
       var kitUrlActivity = '-' + kitAnswerActivity[0].value;
       var kitUrlFinal = 'http://www.craghoppers.com/' + kitUrlGender + kitUrlActivity;
+      localStorage.setItem('kitGuideActivity', kitAnswerActivity[0].value);
     } else {
       var kitUrlFinal = 'http://www.craghoppers.com/' + kitUrlGender;
     }
@@ -136,11 +166,8 @@ $j(document).ready(function($) {
 
     // add url to form and submit
 
-    console.log(kitUrlFinal);
-
     $j('#kitGuideForm button').attr('formaction', kitUrlFinal);
 
   });
 
-  
 });

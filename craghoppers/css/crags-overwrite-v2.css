@@ -71,6 +71,7 @@ p.hello strong {
 
 	.sidebar .block.block-layered-nav .block-title {
 		padding: 12px !important;
+		display: block;
 	}
 
 	#narrow-by-list, #narrow-by-list2 {
@@ -3503,6 +3504,62 @@ a.lev-photoGrid__button:hover {
 	border-bottom: none;
 }
 
-#customer-reviews dd div:last-child {
+#customer-reviews dd > div {
+	display: none !important;
+}
+
+
+/*
+Uncomment this if monetate experiment wins and its needed.
+.lhn-show-more-less a {
+	padding-top: 6px;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.lhn-show-less-link {
 	display: none;
+}*/
+
+.product-collateral .technologies-wrapper--fullWidth .amshopby-link,
+.product-collateral .technologies-wrapper .amshopby-link {
+	width: 16%;
+	float: left;
+	min-width: 77px;
+}
+
+
+/* Kit Guide Widget */
+
+.cms-men-hot-humid .main-container {
+	width: 100%;
+	max-width: 100%;
+}
+
+.cms-men-hot-humid .breadcrumbs {
+	display: none;
+}
+
+.cms-men-hot-humid .categoryBanner__image {
+	background: url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/kitguide/HotHumid_1800x285.jpg') no-repeat center;
+}
+
+.kitGuideResultsContainer {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.kitGuideResultsIntro {
+	padding: 36px 3%;
+	background: #edebdc;
+	margin-bottom: 36px;
+}
+
+.kitGuideResultsIntro h1 span {
+	font-family: 'montserratregular', Helvetica, Arial, sans-serif;
+}
+
+.kitGuideResultsIntro p {
+	font-family: 'montserratregular', Helvetica, Arial, sans-serif;
+	margin-bottom: 0;
 }
