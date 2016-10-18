@@ -2969,7 +2969,8 @@ a.lev-photoGrid__button:hover {
 /* *********** END *********** */
 /* **** LEV WOOD MICROSITE V2 STYLES ****/
 
-.categorypath-men .categoryBanner__image {
+.categorypath-men .categoryBanner__image,
+.categorypath-herren .categoryBanner__image {
     background: url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/Top+Level+Banners/AW16_Mens_Banner_1800x285px.jpg') no-repeat center;
 }
 
@@ -2977,11 +2978,13 @@ a.lev-photoGrid__button:hover {
     background: url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/Top+Level+Banners/AW16_Womens_Banner_1800x285px.jpg') no-repeat center;
 }
 
-.categorypath-kids .categoryBanner__image {
+.categorypath-kids .categoryBanner__image,
+.categorypath-kinder .categoryBanner__image {
     background: url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/Top+Level+Banners/AW16_Kids_Banner_1800x285px.jpg') no-repeat center;
 }
 
-.categorypath-accessories .categoryBanner__image {
+.categorypath-accessories .categoryBanner__image,
+.categorypath- .categoryBanner__image {
     background: url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/Top+Level+Banners/AW16_Access_Banner_1800x285px.jpg') no-repeat center;
 }
 
@@ -3562,4 +3565,49 @@ Uncomment this if monetate experiment wins and its needed.
 .kitGuideResultsIntro p {
 	font-family: 'montserratregular', Helvetica, Arial, sans-serif;
 	margin-bottom: 0;
+}
+
+/* Spend and Save Promo Row on Homepage */
+
+.pageSection--spendSave__container {
+	background-color: #e5eaea;
+	float: left;
+	padding-top: 2vw;
+}
+
+.pageSection--spendSave .pageBanner {
+	width: 28%;
+}
+
+.pageSection--spendSave .pageBanner:nth-of-type(1),
+.pageSection--spendSave .pageBanner:nth-of-type(4) {
+	margin: 0 0 0 2%;
+}
+
+.pageSection--spendSave .pageBanner:nth-of-type(2),
+.pageSection--spendSave .pageBanner:nth-of-type(5) {
+	margin: 0 6%;
+}
+
+.pageSection--spendSave .pageBanner:nth-of-type(3),
+.pageSection--spendSave .pageBanner:nth-of-type(6) {
+	margin: 0 2% 0 0;
+}
+
+.pageSection--spendSave .pageSection__title {
+	margin-bottom: 0;
+}
+
+.pageSection--spendSave .bannerOverlay__cta {
+	margin: 1vw auto 4vw;
+	display: block;
+	text-align: center;
+}
+
+@media screen and (max-width: 440px) {
+
+	.pageSection--spendSave .pageBanner {
+		width: 54%;
+		margin: 0 23% !important;
+	}
 }

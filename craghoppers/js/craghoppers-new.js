@@ -350,4 +350,15 @@ $j(document).ready(function($) {
 
   $j('.productPageTechnologies, .amshopby-link script').remove();
 
+
+  // fix to mobile solr filtering
+  $j('.col-left .block-title').on('click', function(){
+    $j('#narrow-by-list').toggleClass('display no-display');
+  });
+
+  $j('#narrow-by-list dt').on('click', function(){
+    console.log('click dave');
+    $j(this).next('dd').find('ol').css('display', 'block');
+  });
+
 });
