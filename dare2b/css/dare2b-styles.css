@@ -986,6 +986,8 @@ html div.MagicToolboxContainer.selectorsBottom .MagicToolboxSelectorsContainer .
 button.mz-button.mz-button-close {top: 70px !important;}
 }
 
+
+
 /*////////////////////////////////////////
 // OTHER BITS AND BOBS
 ////////////////////////////////////////*/
@@ -1006,3 +1008,10 @@ figure.mz-figure{width:100%;}
 .mz-figure > img {  max-width: 100% !important;}
 
 }
+
+/* store locator page */
+.storelocator-index-index .page-title{margin: 20px 0; display: block}
+.storelocator-index-index .page-title h1{padding-bottom: 10px;}
+#store_search h2{border: 0;}
+#list-store li{}
+#list-store li .store_name, .store_popup .store_name{color: #0080c5;}
