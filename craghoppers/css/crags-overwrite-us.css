@@ -20,3 +20,9 @@ label[for="billing:use_for_shipping_no"] {
 label[for="billing:use_for_shipping_no"]:after {
 	content: ' ';
 }
+
+
+/* Leave this set to display: none as Monetate is being used to set it to display */
+.deliveryBar {
+	display: none;
+}
