@@ -48,13 +48,16 @@ jQuery(window).load(function(){
   //PRODUCT PAGE ALT IMAGE SCROLLER
   var altPos = 0;
   var altArrows = "<span class='altArrow next'>></span><span class='altArrow prev'><</span>";
-  var altItems = jQuery('.more-views > ul');
+  var altItems = jQuery('.MagicToolboxSelectorsContainer .mcs-items-container');
 
-  jQuery('.more-views').append(altArrows);
-  jQuery('.more-views .altArrow').on('click', function(){
+  jQuery('.MagicToolboxSelectorsContainer').append(altArrows);
+  jQuery('.MagicToolboxSelectorsContainer .altArrow').on('click', function(){
     if (jQuery(this).hasClass('next')){
-      if (altPos < ( jQuery('.more-views > ul > li').length - 1 )){
+      if (altPos < ( jQuery('.mcs-items-container > div').length / 2 - 1 )){
         altPos++;
+        altItems.animate({top: (altPos * -100)});
+      } else {
+        altPos = 0;
         altItems.animate({top: (altPos * -100)});
       } 
     } else {
