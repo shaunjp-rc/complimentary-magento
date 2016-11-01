@@ -457,9 +457,9 @@ body .product-options, body .product-options-bottom{display: block !important}
 .product-essential .box-related.box-collateral .block-content li.item{display: inline-block;margin: 1%;width: 95%;padding: 10px 0px;height: 100%;max-height: 105px;margin: 0;}
 .product-essential .box-related.box-collateral .block-content::before{content: " ";box-shadow: inset 0px -50px 10px -20px #ffffff;height: 50px;position: absolute;bottom: 0px;width: 100%;max-width: 80px;z-index: 1;}
 .more-views .product-image-thumbs{max-height: 333px; position: relative;}
-.more-views .altArrow{position: absolute; top: 0; left: 0; font-weight: bold; width: 40%; margin: 0 30%; text-align: center; padding: 0px; background: rgba(255,255,255,0.7); 
-   transform: rotateZ(90deg) scale(1, 1.5); cursor: pointer; color: #111; font-size: 16px;}
-.more-views .altArrow.next{top: auto; bottom: 0;}
+.MagicToolboxSelectorsContainer .altArrow{position: absolute; top: 0; left: 0; font-weight: bold; width: 40%; margin: 0 30%; text-align: center; padding: 0px; background: rgba(255,255,255,0.7); 
+   transform: rotateZ(90deg) scale(1, 1.5); cursor: pointer; color: #111; font-size: 16px; z-index: 99;}
+.MagicToolboxSelectorsContainer .altArrow.next{top: auto; bottom: 0;}
 .more-views .product-image-thumbs::before{content:" ";box-shadow: inset 0px -50px 10px -20px #ffffff;height: 50px;position: absolute;bottom: 0px;width: 100%;max-width: 85px;}
 .more-views .product-image-thumbs li:last-child{margin-bottom: 50px;}
 .block-content li .item-info{width: 100%;height: auto;}
@@ -977,7 +977,7 @@ div.MagicToolboxSelectorsContainer{position:absolute; left: -94px; top: 0; width
 
 @media screen and (max-width: 1260px){
 
-div.MagicToolboxSelectorsContainer{position:absolute; left: -94px; top: 0; width: 85px; padding: 10px; background: #fff; border: 1px solid #ddd; border-radius: 4px; max-height: 300px; overflow: auto;}
+div.MagicToolboxSelectorsContainer{position:absolute; left: -94px; top: 0; width: 85px; padding: 10px; background: #fff; border: 1px solid #ddd; border-radius: 4px; max-height: 300px; overflow: hidden;}
 
 
 }
