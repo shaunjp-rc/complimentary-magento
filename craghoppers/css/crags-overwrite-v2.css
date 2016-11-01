@@ -3531,6 +3531,98 @@ Uncomment this if monetate experiment wins and its needed.
 	min-width: 77px;
 }
 
+
+/* Kit Guide Widget */
+
+.kitGuideResultsPage .main-container {
+	width: 100%;
+	max-width: 100%;
+}
+
+.kitGuideResultsPage .breadcrumbs {
+	display: none;
+}
+
+.cms-men-hot-humid .categoryBanner__image,
+.cms-women-hot-humid .categoryBanner__image,
+.cms-kids-hot-humid .categoryBanner__image,
+.cms-men-adventure-travel .categoryBanner__image,
+.cms-women-adventure-travel .categoryBanner__image,
+.cms-kids-adventure-travel .categoryBanner__image {
+	background: url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/kitguide/HotHumid_1800x285px.jpg') no-repeat center;
+}
+
+.cms-men-hot-dry .categoryBanner__image,
+.cms-women-hot-dry .categoryBanner__image,
+.cms-kids-hot-dry .categoryBanner__image,
+.cms-men-safari .categoryBanner__image,
+.cms-women-safari .categoryBanner__image,
+.cms-kids-safari .categoryBanner__image {
+	background: url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/kitguide/HotDry_1800x285px.jpg') no-repeat center;
+}
+
+.cms-men-cold-wet .categoryBanner__image,
+.cms-women-cold-wet .categoryBanner__image,
+.cms-kids-cold-wet .categoryBanner__image,
+.cms-men-fell-walking .categoryBanner__image,
+.cms-women-fell-walking .categoryBanner__image,
+.cms-kids-fell-walking .categoryBanner__image {
+	background: url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/kitguide/ColdWet_1800x285px.jpg') no-repeat center;
+}
+
+.cms-men-walking .categoryBanner__image,
+.cms-women-walking .categoryBanner__image,
+.cms-kids-walking .categoryBanner__image,
+.cms-men-hiking .categoryBanner__image,
+.cms-women-hiking .categoryBanner__image,
+.cms-kids-hiking .categoryBanner__image {
+	background: url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/kitguide/Walking_1800x285px.jpg') no-repeat center;
+}
+
+.cms-kids-dog-walking .categoryBanner__image,
+.cms-men-dog-walking .categoryBanner__image,
+.cms-women-dog-walking .categoryBanner__image {
+	background: url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/kitguide/DogWalking_1800x285px.jpg') no-repeat center;
+}
+
+.cms-kids-fishing .categoryBanner__image,
+.cms-men-fishing .categoryBanner__image,
+.cms-women-fishing .categoryBanner__image {
+	background: url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/kitguide/Fishing_1800x285px.jpg') no-repeat center;
+}
+
+.cms-kids-camping .categoryBanner__image,
+.cms-men-camping .categoryBanner__image,
+.cms-women-camping .categoryBanner__image {
+	background: url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/kitguide/Camping_1800x285px.jpg') no-repeat center;
+}
+
+.cms-men-cold-dry .categoryBanner__image,
+.cms-women-cold-dry .categoryBanner__image,
+.cms-kids-cold-dry .categoryBanner__image {
+	background: url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/kitguide/ColdDry_1800x285px.jpg') no-repeat center;
+}
+
+.kitGuideResultsContainer {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.kitGuideResultsIntro {
+	padding: 36px 3%;
+	background: #edebdc;
+	margin-bottom: 36px;
+}
+
+.kitGuideResultsIntro h1 span {
+	font-family: 'montserratregular', Helvetica, Arial, sans-serif;
+}
+
+.kitGuideResultsIntro p {
+	font-family: 'montserratregular', Helvetica, Arial, sans-serif;
+	margin-bottom: 0;
+}
+
 /* Spend and Save Promo Row on Homepage */
 
 .pageSection--spendSave__container {
@@ -3576,424 +3668,67 @@ Uncomment this if monetate experiment wins and its needed.
 	}
 }
 
+/* feefo */
 
-/* 
-
-Kit Guide Widget 
-
-START
-
-*/
-
-/* Results pages */
-
-.cms-men-hot-humid .main-container {
-	width: 100%;
-	max-width: 100%;
+li.feefo-ratings {
+    margin-top: 4%;
+    float: left;
 }
-
-.cms-men-hot-humid .breadcrumbs {
-	display: none;
+@media screen and (max-width: 760px) {
+.feefo-ratings {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 270px;
 }
-
-.cms-men-hot-humid .categoryBanner__image {
-	background: url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/kitguide/HotHumid_1800x285.jpg') no-repeat center;
 }
-
-.kitGuideResultsContainer {
-	max-width: 1140px;
-	margin: 0 auto;
+/* END */
+/* Fiona & Gill Form*/
+.form__container{
+	width:100%;
+	float:left;
+	padding:0 2%;
 }
-
-.kitGuideResultsIntro {
-	padding: 36px 3%;
-	background: #edebdc;
-	margin-bottom: 36px;
-}
-
-.kitGuideResultsIntro h1 span {
-	font-family: 'montserratregular', Helvetica, Arial, sans-serif;
-}
-
-.kitGuideResultsIntro p {
-	font-family: 'montserratregular', Helvetica, Arial, sans-serif;
-	margin-bottom: 0;
-}
-
-
-/* Kit Guide widget */
-
-.pageSection--kitWidget {
-	background: #eee;
-	margin-top: 3vw;
-}
-
-.kitGuideWidget,
-.kitGuideForm {
-	padding: 40px 5% 60px;
-	background: #eee;
-	max-width: 1140px;
-	margin: 0 auto;
-	font-family: 'montserratlight', Helvetica, Arial, sans-serif;
-}
-
-.kitGuideWidget {
+.form__header{
+	float:left;
+	width:100%;
 	text-align: center;
 }
-
-.kitGuideWidget__text {
-	font-size: 16px;
+.tempform{
+	width:100%;
+	float:left;
+	text-align: center;
+	padding:5%;
 }
-
-.kitGuideWidget .kitGuideButton--getStarted {
-	float: none;
-	width: 200px;
-	margin: 0 auto;
+.webforms-fields-row-2331 label,
+.webforms-fields-row-2332 label,
+.form__container li.control label {
+    display: none;
 }
-
-.kitGuideForm {
-	padding: 0 10%;
+.form__container ul.list-select {
+    float: left;
+    max-width: 40px;
 }
-
-.kitGuideForm__fieldset {
-	padding-bottom: 30px;
+.form__container p.webforms-fields-comment {
+    width: auto;
+    margin-top: 0.8%;
 }
-
-.kitGuideForm__fieldset h3 {
-	margin-bottom: 36px;
+.form__container li.wide,
+.form__container li.fields {
+    float: left;
+    width: 100%;
 }
-
-.kitGuideButton {
-	color: #fff;
-	background: #c6000d;
-	border: #c6000d solid 1px !important;
-	margin-top: 0;
-	cursor: pointer;
-	display: block;
-	float: left;
-	clear: left;
-	border: none;
+div.form__container div.webforms-success-text span {
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: green;
 }
-
-.kitGuideButton:hover {
-	background: #c62650;
+div.form__container div.webforms-success-text {
+    float: left;
+    width: 100%;
+    margin: 3% 0;
 }
-
-/*.kitGuideForm input {
-	margin-right: 12px;
-}*/
-
-.kitGuideForm__fieldset ul {
-	list-style: none outside;
-	margin-bottom: 30px;
-	float: left;
-	width: 100%;
+.form__container button {
+    width: 15%;
 }
-
-.kitGuideForm__fieldset--activity ul {
-	width: 50%;
-}
-
-.kitGuideForm__fieldset ul li {
-	margin-bottom: 24px;
-	vertical-align: top;
-	font-size: 14px;
-	line-height: 1;
-}
-
-.kitGuideForm__fieldset ul li:hover {
-	cursor: pointer;
-}
-
-.kitGuideButton--reset {
-	background: none;
-	border: #c6000d solid 1px;
-	color: #c6000d;
-	float: left;
-	clear: none;
-}
-
-/* hidden by default. js will reveal as needed */
-.kitGuideForm, 
-.kitGuideForm__fieldset,
-.kitGuideForm__helpText,
-.kitGuideButton--submit,
-.kitGuideForm__fieldset--gender .kitGuideButton--reset {
-	display: none;
-}
-
-.kitGuideForm input[type='radio'] {
-	visibility: hidden;
-	position: absolute;
-}
-
-.kitGuideForm label {
-	font-size: 16px;
-	padding-left: 24px;
-	position: relative;
-	font-family: 'montserratlight', Helvetica, Arial, sans-serif;
-}
-
-.kitGuideForm label:before {
-	content: '';
-	width: 14px;
-	height: 14px;
-	border: 2px solid #999;
-	border-radius: 7px;
-	position: absolute;
-	left: 0;
-	top: 2px;
-	/*-webkit-transition: all 200ms ease-in;
-	-moz-transition: all 200ms ease-in;
-	-ms-transition: all 200ms ease-in;
-	-o-transition: all 200ms ease-in;
-	transition: all 200ms ease-in;*/
-}
-
-.kitGuideForm label:after {
-	content: '';
-	width: 6px;
-	height: 6px;
-	border: 2px solid #eee;
-	border-radius: 6px;
-	position: absolute;
-	left: 4px;
-	top: 6px;
-	background: #eee;
-	-webkit-transition: all 200ms ease-in;
-	-moz-transition: all 200ms ease-in;
-	-ms-transition: all 200ms ease-in;
-	-o-transition: all 200ms ease-in;
-	transition: all 200ms ease-in;
-}
-
-.kitGuideForm input[type='radio']:checked + label:after {
-	border: 2px solid #c6000d;
-	background: #c6000d;
-}
-
-.kitGuideForm input[type='radio']:checked + label {
-	font-family: 'montserratregular', Helvetica, Arial, sans-serif;
-}
-
-.kitGuideErrorMessage {
-	color: #c6000d;
-	position: relative;
-	float: left;
-	clear: left;
-	display: none;
-}
-
-.kitGuideIcon {
-	display: inline-block;
-	height: 60px;
-	width: 70px;
-	background: url('http://d1khwdv4lze0nb.cloudfront.net/images/AW16/QuestionMark_70x60px.png') no-repeat;
-}
-
-@media screen and (max-width: 960px) {
-
-	.kitGuideButton {
-		font-size: 14px;
-		padding: 12px 24px;
-	}
-}
-
-@media screen and (max-width: 680px) {
-
-	.kitGuideIcon {
-		display: block;
-		background-position: center;
-		margin-bottom: 12px;
-		width: 100%;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	
-	.kitGuideForm__fieldset--activity ul {
-		width: 100%;
-	}
-
-	.kitGuideForm__fieldset--activity ul:first-of-type {
-		margin-bottom: 0;
-	}
-}
-
-/* Slide Out Version Specifics */
-
-#kitGuideWidgetSlideOut {
-	position: fixed;
-	top: 25%;
-	right: 0;
-	width: 60%;
-	background: #383838;
-	color: #fff;
-	z-index: 100;
-}
-
-#kitGuideWidgetSlideOut .kitGuideWidgetTab {
-	font-family: 'montserratbold', 'Arial Black', Gadget, Helvetica, Arial, sans-serif;
-	font-size: 16px;
-	color: #fff;
-	background: #383838;
-	cursor: pointer;
-	padding: 6px 12px;
-	-moz-transform: rotate(-90deg);
-	-webkit-transform: rotate(-90deg);
-	-o-transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg);
-	transform: rotate(-90deg);
-	display: inline-block;
-	-webkit-transition: background 200ms ease;
-	-moz-transition: background 200ms ease;
-	-ms-transition: background 200ms ease;
-	-o-transition: background 200ms ease;
-	transition: background 200ms ease;
-	margin-left: -100px;
-	top: 53px;
-	position: absolute;
-}
-
-.kitGuideWidgetSlideClose {
-	display: block;
-	text-align: right;
-	background-color: #383838;
-	color: #fff !important;
-	text-decoration: underline;
-	padding: 6px 24px 0 0;
-}
-
-.kitGuideWidgetSlideClose:after {
-	content: '\2192';
-}
-
-#kitGuideWidgetSlideOut .kitGuideWidgetTab:hover {
-	color: #fff;
-	background-color: #c62650;
-}
-
-#kitGuideWidgetSlideOut {
-	-moz-transform: translateX(100%);
-	-webkit-transform: translateX(100%);
-	-o-transform: translateX(100%);
-	-ms-transform: translateX(100%);
-	transform: translateX(100%);
-	-webkit-transition: all 400ms ease-in;
-	-moz-transition: all 400ms ease-in;
-	-ms-transition: all 400ms ease-in;
-	-o-transition: all 400ms ease-in;
-	transition: all 400ms ease-in;
-}
-
-#kitGuideWidgetSlideOut:target {
-	-moz-transform: translateX(0);
-	-webkit-transform: translateX(0);
-	-o-transform: translateX(0);
-	-ms-transform: translateX(0);
-	transform: translateX(0);
-}
-
-#kitGuideWidgetSlideOut fieldset {
-	/*float: left;*/
-	background-color: #383838;
-	width: 100%;
-}
-
-#kitGuideWidgetSlideOut .kitGuideWidget,
-#kitGuideWidgetSlideOut .kitGuideForm {
-	background: #383838;
-}
-
-#kitGuideWidgetSlideOut .kitGuideForm__fieldset h3,
-#kitGuideWidgetSlideOut .kitGuideButton--reset,
-#kitGuideWidgetSlideOut .kitGuideWidget__title {
-	color: #fff;
-}
-
-#kitGuideWidgetSlideOut .kitGuideButton--reset {
-	border-color: #fff;
-}
-
-#kitGuideWidgetSlideOut .kitGuideForm label:before {
-	background: #eee;
-}
-
-.kitGuideIconTab {
-	display: inline-block;
-	height: 30px;
-	width: 35px;
-	background: url('http://d1khwdv4lze0nb.cloudfront.net/images/AW16/QuestionMark_70x60px.png') no-repeat;
-	background-size: contain;
-	-moz-transform: rotate(90deg);
-	-webkit-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	transform: rotate(90deg);
-}
-
-@media screen and (max-width: 770px) {
-
-	.wrapper {
-		padding-top: 48px;
-	}
-
-	#kitGuideWidgetSlideOut {
-		position: fixed;
-		top: 0;
-		right: 0;
-		width: 100%;
-		z-index: 10;
-	}
-
-	#kitGuideWidgetSlideOut .kitGuideWidgetTab {
-		-moz-transform: rotate(0deg);
-		-webkit-transform: rotate(0deg);
-		-o-transform: rotate(0deg);
-		-ms-transform: rotate(0deg);
-		transform: rotate(0deg);
-		margin-left: 0;
-		top: auto;
-		bottom: -42px;
-		width: 100%;
-		text-align: center;
-	}
-
-	.kitGuideIconTab {
-		-moz-transform: rotate(0deg);
-		-webkit-transform: rotate(0deg);
-		-o-transform: rotate(0deg);
-		-ms-transform: rotate(0deg);
-		transform: rotate(0deg);
-		vertical-align: bottom;
-	}
-
-	.kitGuideWidgetSlideClose:after {
-		content: '\2191';
-	}
-
-	#kitGuideWidgetSlideOut {
-		-moz-transform: translateX(0) translateY(-100%);
-		-webkit-transform: translateX(0) translateY(-100%);
-		-o-transform: translateX(0) translateY(-100%);
-		-ms-transform: translateX(0) translateY(-100%);
-		transform: translateX(0) translateY(-100%);
-	}
-
-	#kitGuideWidgetSlideOut:target {
-		-moz-transform: translateX(0) translateY(0);
-		-webkit-transform: translateX(0) translateY(0);
-		-o-transform: translateX(0) translateY(0);
-		-ms-transform: translateX(0) translateY(0);
-		transform: translateX(0) translateY(0);
-		position: static;
-	}
-}
-
-/* 
-
-Kit Guide Widget 
-
-END
-
-*/
+/* END */
