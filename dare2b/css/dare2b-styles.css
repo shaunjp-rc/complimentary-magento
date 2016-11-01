@@ -1000,7 +1000,8 @@ div.MagicToolboxSelectorsContainer{margin: 0 !important}
 
 div.MagicToolboxSelectorsContainer{position: relative; left: 0; width: 90% !important; margin: 10px 5% !important; padding-top: 10px !important; border: 0; overflow: auto}
 html div.MagicToolboxContainer.selectorsBottom .MagicToolboxSelectorsContainer .mcs-item{display: inline-block !important; width: 60px !important;}
-
+.MagicToolboxContainer.selectorsBottom .MagicToolboxSelectorsContainer .altArrow{display: none;}
+.mcs-wrapper{overflow: visible;}
 }
 
 .checkout-onepage-index #usp-bar{display:none !important}
