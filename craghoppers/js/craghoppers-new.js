@@ -246,21 +246,21 @@ $j(document).ready(function($) {
 
   // Fit text tool-tip
 
-  if ($j('body').hasClass('catalog-product-view')) {
+  // if ($j('body').hasClass('catalog-product-view')) {
     
-    var fitTip = $j('<div class="fit-tip"><h2>Fit</h2><span id="fitTipClose">Close</span><p>All our garments are designed specifically for purpose. Our long standing <strong>"Classic Fit"</strong> is exactly what you would expect from everyday outdoor gear - slightly looser with a casual and relaxed feel.</p><p>For those who prefer to wander off track the <strong>"Adventure Fit"</strong> offers a slimmer fitting throughout for added comfort.</p><p>We then have <strong>"Active Fit"</strong>, this is essentially our Pro Stretch gear. Designed to contour the body with cutting in specific areas for a slim fitted feel.</p></div>');
+  //   var fitTip = $j('<div class="fit-tip"><h2>Fit</h2><span id="fitTipClose">Close</span><p>All our garments are designed specifically for purpose. Our long standing <strong>"Classic Fit"</strong> is exactly what you would expect from everyday outdoor gear - slightly looser with a casual and relaxed feel.</p><p>For those who prefer to wander off track the <strong>"Adventure Fit"</strong> offers a slimmer fitting throughout for added comfort.</p><p>We then have <strong>"Active Fit"</strong>, this is essentially our Pro Stretch gear. Designed to contour the body with cutting in specific areas for a slim fitted feel.</p></div>');
 
-    fitTip.appendTo('.product-clothing-fit');
+  //   fitTip.appendTo('.product-clothing-fit');
     
-    $j('.product-clothing-fit a').on('click', function(event){
-      event.preventDefault();
-      fitTip.css('display', 'block');
-    });
+  //   $j('.product-clothing-fit a').on('click', function(event){
+  //     event.preventDefault();
+  //     fitTip.css('display', 'block');
+  //   });
 
-    $j('#fitTipClose').on('click', function() {
-      fitTip.css('display', 'none');
-    });
-  }
+  //   $j('#fitTipClose').on('click', function() {
+  //     fitTip.css('display', 'none');
+  //   });
+  // }
 
 
   // Lev Wood Sticky Nav

@@ -3732,3 +3732,46 @@ div.form__container div.webforms-success-text {
     width: 15%;
 }
 /* END */
+
+/* New Fit Guide Diagram Stuff */
+.fitGuideDiagrams {
+	padding-top: 3%;
+	float: left;
+}
+
+.fitGuideDiagrams__title,
+.fitGuideDiagrams__blockContainer {
+	float: left;
+	clear: both;
+}
+
+.fitGuideDiagrams__block {
+	width: 29%;
+	float: left;
+	margin: 0 6% 2% 0;
+}
+
+.fitGuideDiagrams__block:last-child {
+	margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+
+	.fitGuideDiagrams__block {
+		width: 47%;
+		margin: 0 6% 2% 0;
+	}
+
+	.fitGuideDiagrams__block:nth-child(2) {
+		margin-right: 0;
+	}
+}
+
+
+@media screen and (max-width: 440px) {
+
+	.fitGuideDiagrams__block {
+		width: 100%;
+		margin: 0 0 2%;
+	}
+}
