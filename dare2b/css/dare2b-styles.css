@@ -150,7 +150,8 @@ header#header, .page-header-container{background: #222; padding: 0;}
 #header-nav .ms-megamenu .anchor_mbmenu{position: absolute;top: -64px;right: 0;height: 64px;width: 60px;}
 #header-nav .nav-1{/* margin-top: -20px */}
 .ms-megamenu .mb-label{width: 100%; background-color: transparent !important;}
-.glyphicon-chevron-right:before{float: right; margin-right: 10px;}
+.glyphicon-chevron-right:before{float: right;margin-right: 10px;content: ">";font-weight: bold;transform: scale(1,1.5);}
+.glyphicon-chevron-left:before{content: "<"; font-weight: bold;transform: scale(1,1.5); float: left;}
 #header-search{max-width: 250px}
 
 }
@@ -177,6 +178,7 @@ header#header, .page-header-container{background: #222; padding: 0;}
 
 @media screen and (max-width: 779px){
 
+header#header.open{height: 100%;}
 .mb-label.glyphicon.glyphicon-chevron-right{padding: 11px;font-weight: 100;}
 .ms-megamenu .anchor_mbmenu .anchor_mbmenu_text{height:50px;background: url(https://d2mhdcmxti8mqe.cloudfront.net/AW16/css/relating-images/menu-icon.png) no-repeat;background-size: 50px;background-position: center;}
 .account-cart-wrapper{right: 50px;}
