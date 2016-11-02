@@ -3752,7 +3752,7 @@ div.form__container div.webforms-success-text {
 }
 
 .fitGuideDiagrams__block:last-child {
-	margin-right: 0;
+	margin-right: 0px;
 }
 
 @media screen and (max-width: 768px) {
