@@ -2471,3 +2471,15 @@ body{
     max-width: 270px;
 }
 }
+
+/* Left Hand Nav show/hide */
+.lhn-show-more-less a {
+  padding-top: 6px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.lhn-show-less-link {
+  display: none;
+}
+/* END */
