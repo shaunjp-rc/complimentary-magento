@@ -369,7 +369,7 @@ html .sub-text span{font-weight: 100;color: #000;}
 .percentOffContainer .upto{font-weight: 500;font-size: 17px;margin-bottom: -8px;}
 .percentOffContainer .percent{font-weight: 500;font-size: 18px;}
 .percentOffContainer{height: 50px; width: 55px;}
-/*end row fix for flex*/.products-grid::after {  content: '';  flex-grow: 20;}
+/*end row fix for flex*/.products-grid::after {  content: '';  flex-grow: 20; display: block}
 /*Generic category page rules*/
 .sub-text span{font-weight: 100;}
 @media screen and (max-width: 1024px){
