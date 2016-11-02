@@ -72,6 +72,34 @@ jQuery(window).load(function(){
     }
   });
 
+  //PRODUCT PAGE ALT IMAGE SCROLLER
+  var altCPos = 0;
+  var altCArrows = "<span class='altArrow next'>></span><span class='altArrow prev'><</span>";
+  var altCItems = jQuery('.box-collateral.box-related > ul');
+
+  jQuery('.box-collateral.box-related').append(altCArrows);
+  jQuery('.box-collateral.box-related .altArrow').on('click', function(){
+    if (jQuery(this).hasClass('next')){
+      if (altCPos < ( jQuery('.box-collateral.box-related ul > li').length - 1 )){
+        altCPos++;
+        altCItems.animate({top: (altCPos * -100)});
+      } else {
+        altCPos = 0;
+        altCItems.animate({top: (altCPos * -100)});
+      } 
+    } else {
+      if (altCPos > 0){
+        altCPos--;
+        altCItems.animate({top: (altCPos * -100)});
+      } else {
+        altCPos = 0;
+        altCItems.animate({top: (altCPos * -100)});
+      }
+
+    }
+  });
+
+
   //FIXED SCROLL
   if (jQuery('#narrow-by-list').length > 0){
 

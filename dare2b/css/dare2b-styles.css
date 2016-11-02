@@ -450,16 +450,16 @@ html .sub-text h1{font-size: 22px; margin-top: 0;}
 body .product-options, body .product-options-bottom{display: block !important}
 .product-options-bottom{margin: 0px;background: #ffffff;padding: 0px 40px 10px 40px;max-width: 650px;}
 .product-essential .box-collateral{background: #ffffff;padding: 0px 5px 0px 5px;margin-top: 0px;float: left;position: absolute;width: 87px;height: 100%;left: -95px;bottom: 0px;margin: 0;border: solid 1px #dedede;max-height: 48%;overflow: hidden;border-radius: 4px;box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.06);}
-.product-essential .box-related.box-collateral .box-title{display: table;margin: 10px 9px 5px 9px;}
-.product-essential .box-related.box-collateral .box-title strong span{font-size: 12px !important;text-transform: uppercase;}
+.product-essential .box-related.box-collateral .box-title{display: block;margin: 10px 9px 5px 9px;}
+.product-essential .box-related.box-collateral .box-title strong span{font-size: 10px !important;text-transform: uppercase;line-height: 11px;display: block; background: #fff; padding-top: 28px;  position: relative; top: -10px; z-index: 2}
 .product-essential .box-related.box-collateral .box-title strong span{font-family: futura;font-size: 17px;font-weight: 100;color: #505050;}
-.product-essential .box-related.box-collateral .block-content{width: 100%;float: right;overflow: scroll;overflow-x: hidden;max-height: 220px;height: 280px;}
+.product-essential .box-related.box-collateral .block-content{position: relative;width: 100%;float: right;}
 .product-essential .box-related.box-collateral .block-content li.item{display: inline-block;margin: 1%;width: 95%;padding: 10px 0px;height: 100%;max-height: 105px;margin: 0;}
 .product-essential .box-related.box-collateral .block-content::before{content: " ";box-shadow: inset 0px -50px 10px -20px #ffffff;height: 50px;position: absolute;bottom: 0px;width: 100%;max-width: 80px;z-index: 1;}
 .more-views .product-image-thumbs{max-height: 333px; position: relative;}
-.MagicToolboxSelectorsContainer .altArrow{position: absolute; top: 0; left: 0; font-weight: bold; width: 40%; margin: 0 30%; text-align: center; padding: 0px; background: rgba(255,255,255,0.7); 
+.MagicToolboxSelectorsContainer .altArrow, .box-related .altArrow{position: absolute; top: 0; left: 0; font-weight: bold; width: 40%; margin: 0 30%; text-align: center; padding: 0px; background: rgba(255,255,255,0.7); 
    transform: rotateZ(90deg) scale(1, 1.5); cursor: pointer; color: #111; font-size: 16px; z-index: 99;}
-.MagicToolboxSelectorsContainer .altArrow.next{top: auto; bottom: 0;}
+.MagicToolboxSelectorsContainer .altArrow.next, .box-related .altArrow.next{top: auto; bottom: 0;}
 .more-views .product-image-thumbs::before{content:" ";box-shadow: inset 0px -50px 10px -20px #ffffff;height: 50px;position: absolute;bottom: 0px;width: 100%;max-width: 85px;}
 .more-views .product-image-thumbs li:last-child{margin-bottom: 50px;}
 .block-content li .item-info{width: 100%;height: auto;}
@@ -563,6 +563,7 @@ button.button.btn-cart {}
 
 
 @media only screen and (max-width: 770px) {
+  .box-related .altArrow{display: none;}
   .mz-expand{z-index: 9999999999}
   .breadcrumbs {    display:block !important;}
   .catalog-product-view .breadcrumbs {margin: 4px -10px -10px -10px;border: none;padding: 12px 7px 7px 7px;background: #eaeaea;}
