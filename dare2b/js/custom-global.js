@@ -220,6 +220,7 @@ jQuery(document).ready(function(){
     }
 
     jQuery(".megamenu").toggleClass("open");
+    jQuery("#header").toggleClass('open');
     jQuery(".d2bMobileHeaderLinksWrapper").prepend("<div class='open-menu-icon'></div>");
     jQuery(".open-menu-icon").on("click", function(){
       jQuery(".header-container.xxoo #full-width-cat-banner").show();
