@@ -101,6 +101,7 @@ header#header, .page-header-container{background: #222; padding: 0;}
 .header-links a.skip-active{background-color: #555; border: 0;}
 #header-nav{border-bottom: 0;}
 #header-cart.skip-active{top: 52px}
+.minicart-wrapper > .block-subtitle + div{overflow: auto}
 .page-header-container{max-width: 1600px;position: relative;z-index: 999;: 64px}
 .header-minicart .minicart-actions .checkout-button{background: #0080c5 !important}
 .header-minicart .minicart-actions .cart-link{background: #222}
@@ -158,6 +159,8 @@ header#header, .page-header-container{background: #222; padding: 0;}
 
 @media screen and (max-width: 960px){
 
+#header-account.skip-active{top: 64px; left: 0;}
+.ms-megamenu .ms-submenu{top: 38px !important;}
 .header-links a{display:  block;float: none !important;margin:  1px 0;height:  auto;text-align:  right;letter-spacing: 0.5px;left: 60px;}
 .header-links{left: auto;right: 460px;top: -7px;}
 .ms-topmenu .ms-label{padding: 10px 10px;font-size: 12px;font-weight: 500;}
@@ -346,7 +349,7 @@ html .sub-text span{font-weight: 100;color: #000;}
 .col3-layout .col-wrapper .col-main{width: 82%; padding: 0;}
 .quickbuy .add-to-cart-box{position: relative}
 #narrow-by-list .price-box .price, .price{ font-weight: 100 !important; }
-.disableBut{width: 50px;height: 40px;position: absolute;right: 8px;top: 0;}
+.disableBut{width: 50%;height: 40px;position: absolute;right: 4px;top: 0;z-index: 2;}
 .catalog-category-view .products-grid{display: flex; flex-wrap: wrap; margin: 20px}
 .catalog-category-view .products-grid > li{min-width: 0;flex-basis: 280px;flex-grow: 1;margin: 0px !important;padding: 20px !important;box-sizing:  border-box;}
 .pager .limiter > label, .sorter label{font-family: futura; font-weight: 500;}
