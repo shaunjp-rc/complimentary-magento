@@ -14,6 +14,7 @@
 .products-grid .ratings {    max-width: 160px;  left: 0;    right: 0;    margin: auto;}
 .stockedSizes {    font-size: 10px;}
 .product-collateral .collateral-block h2, .returnsInformation h3, .product-collateral .box-collateral h2 {    font-weight: 100;}
+.delivery-info.collateral-block h2:before{display: none;}
 .checkout-onepage-index .f-left{text-decoration: underline;}
 .checkout-onepage-index #login-form > div > ul > li:nth-child(3){    clear: both;}
 .checkout-onepage-index .buttons-set button.button {min-width: 140px;max-width: 220px;width: 100%;padding: 13px;border-radius: 6px;font-size: 18px;}
@@ -273,16 +274,18 @@ p.block-subtitle.block-subtitle--filter{display: block !important}
 
 @media screen and (max-width: 767px){
 
+.swatch-link{padding: 12px;}
+
 .mcBtn {
     top: 110px;
     left: -106px;
   }
-  .mcBtn.next {
-    position: absolute;
-    top: 490px;
-    left: -106px;
-    bottom: auto;
-  }
+.mcBtn.next {
+  position: absolute;
+  top: 490px;
+  left: -106px;
+  bottom: auto;
+}
 
 }
 
@@ -431,6 +434,8 @@ input#search{color: #ccc;}
 .currently a:after{display: block; content: "x"; float: right; line-height: 10px; margin-top: 5px; position: absolute; top: 0; right: 0;}
 
 @media screen and (max-width: 770px){
+  #prod-del-methods img{width: 20%; margin-right: 5%;}
+  .delivery-info.collateral-block{height: auto}
   .category-products > .toolbar .limiter select{height: 59px; padding: 15px; margin-top: 0px;}
 }
 
@@ -512,13 +517,13 @@ div.MagicToolboxContainer.selectorsBottom .MagicToolboxSelectorsContainer{width:
 .box-up-sell .product-name{max-width: 55% !important}
 }
 
-.product-essential .box-related{float: right; width: 40%; overflow: hidden; position: relative; margin-right: 5%}
-.product-essential .box-related li{float: left; margin: 0}
+.product-essential .box-related{float: right;width: 40%;overflow: auto;position: relative;margin-right: 5%;}
+.product-essential .box-related li{margin: 0;display: inline-block;}
 .product-essential .box-related ul{position: relative;}
-.product-essential .box-related .block-content{width: 90%; overflow: hidden}
+.product-essential .box-related .block-content{overflow: hidden;width: 200%;}
 
 @media screen and (max-width: 660px){
-.product-essential .box-related{float: right; width: 100%; overflow: hidden; position: relative}
+.product-essential .box-related{float: right;width: 100%;overflow: auto;position: relative;margin: 0;}
 }
 
 .out-of-stock .value{position: absolute; left: 0; top: -15px; font-weight: bold; color: red !important; font-size: 20px}
