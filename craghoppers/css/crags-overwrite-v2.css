@@ -3775,6 +3775,18 @@ div.form__container div.webforms-success-text {
 		margin: 0 0 2%;
 	}
 }
+
+.fit-tip .fitGuideDiagrams__block {
+	width: 100%;
+	margin: 0;
+}
+
+.fit-tip .fitGuideDiagrams__image {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
 /* Left Hand Nav show/hide */
 .lhn-show-more-less a {
 	padding-top: 6px;
