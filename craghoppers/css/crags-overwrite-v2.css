@@ -4548,3 +4548,10 @@ div.form__container div.webforms-success-text {
 
 /* *********** END *********** */
 /* **** XMAS MICROSITE STYLES ****/
+
+
+
+/* set to display none here and then turn on and test in Monetate */
+.catalog-category-view .quickbuy {
+	display: none; 
+}
