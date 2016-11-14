@@ -292,29 +292,29 @@ $j(document).ready(function($) {
   }
 
 
-  // Lev Wood Sticky Nav
+  // Lev and Xmas Wood Sticky Nav
   
-  if ($j('html').hasClass('no-touch') && $j('body').hasClass('cms-levisonwood')) {
+  if ( $j('html').hasClass('no-touch') && ($j('body').hasClass('cms-levisonwood') || $j('body').hasClass('cms-christmas')) ) {
       $j(window).on('scroll', function(){
 
         var fromTop = $j(window).scrollTop(),
-          topOfNextBlock = $j('.lev-mainCopy').offset().top;
+          topOfNextBlock = $j('.lev-mainCopy, .xmas-mainCopy').offset().top;
 
 
         if (fromTop > topOfNextBlock) { 
-          $j('.lev-sideBar--horizontal').slideDown(300);
+          $j('.lev-sideBar--horizontal, .xmas-sideBar--horizontal').slideDown(300);
         } else {
-          $j('.lev-sideBar--horizontal').slideUp(300);
+          $j('.lev-sideBar--horizontal, .xmas-sideBar--horizontal').slideUp(300);
         }
     });
   }
 
-  if ($j('html').hasClass('touch') && $j('body').hasClass('cms-levisonwood')) {
+  if ( $j('html').hasClass('touch') && ($j('body').hasClass('cms-levisonwood') || $j('body').hasClass('cms-christmas')) ) {
     var lastHeaderBlockPos = $j('.top-container').offset().top,
       lastHeaderBlockHeight = $j('.top-container').height(),
       endOfHeader = lastHeaderBlockPos + lastHeaderBlockHeight;
       console.log(endOfHeader);
-      $j('.lev-sideBar--horizontal').css({
+      $j('.lev-sideBar--horizontal, .xmas-sideBar--horizontal').css({
         'position': 'relative',
         'float': 'left'
       });
@@ -322,18 +322,18 @@ $j(document).ready(function($) {
       $j(window).on('scroll', function(){
 
         if ($j(window).scrollTop() > endOfHeader - 1) {
-          $j('.lev-sideBar--horizontal').css({
+          $j('.lev-sideBar--horizontal, .xmas-sideBar--horizontal').css({
             'position': 'fixed',
             'top': 0
           });
         } else {
-          $j('.lev-sideBar--horizontal').css('position', 'relative');
+          $j('.lev-sideBar--horizontal, .xmas-sideBar--horizontal').css('position', 'relative');
         }
       });
   }
 
-  $j('.lev-sideBar--horizontal__burger').on('click', function() {
-    $j('.lev-sideBar__hiddenContainer').toggle('slow');
+  $j('.lev-sideBar--horizontal__burger, .xmas-sideBar--horizontal__burger').on('click', function() {
+    $j('.lev-sideBar__hiddenContainer, .xmas-sideBar__hiddenContainer').toggle('slow');
   });
 
 
