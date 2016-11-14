@@ -64,6 +64,10 @@ label[for="billing\:fax"], input#billing\:fax{display:none !important;}
 }
 
 /* MEGA MENU BLOCKS - AUTO WIDTHS */
+/*Mega Menu fix*/
+.active-menu section{width:100%; height:100%;}
+
+
 .menu-holder:after{clear: both; content: ""; display: block;}
 .ms-maincontent{background: #fff !important; width: auto !important; display: inline-block}
 .ms-megamenu .ms-submenu{padding: 0; background: none; border: 0;}
