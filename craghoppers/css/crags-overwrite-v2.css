@@ -4553,5 +4553,63 @@ div.form__container div.webforms-success-text {
 
 /* set to display none here and then turn on and test in Monetate */
 .catalog-category-view .quickbuy {
-	display: none; 
+	display: none;
+	float: left;
+    width: 100%; 
+}
+.quickbuy .qty-box label {
+    display: none;
+}
+.quickbuy fieldset.add-to-cart-box {
+    float: left;
+    width: 100%;
+}
+.quickbuy div{
+    float: left;
+    width:50%;
+}
+.quickbuy form{
+    float: left;
+    width:50%;
+}
+.quickbuy select.sizeSelector {
+    height: 36px;
+    font-size: 12px;
+    width: 100%;
+}
+.qty-box .input-text.qty#qty {
+    width: 100%;
+    max-width: 30px;
+    margin: 0px 6%;
+}
+.quickbuy button.button.btn-cart {
+    padding: 7% 0;
+    width: 50%;
+}
+@media only screen and (max-width: 768px){
+.quickbuy form,
+.quickbuy div {
+    width: 100%;
+}
+.quickbuy div.disableBut {
+    float: none;
+    width: 0;
+}
+.qty-box .input-text.qty#qty {
+    float: left;
+    max-width: 40px;
+    margin: 0;
+}
+.quickbuy button.button.btn-cart {
+    float: right;
+    padding: 4.5% 0;
+    width: 65%;
+    height:36px;
+}
+.quickbuy form{
+	margin-top:5%;
+}
+    
+
+
 }
