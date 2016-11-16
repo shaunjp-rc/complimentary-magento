@@ -4032,6 +4032,10 @@ div.form__container div.webforms-success-text {
 
 /* start photo grid */
 
+.xmas-photoGrid {
+	max-width: 980px;
+}
+
 .xmas-photoGrid__container {
     display: table;
     width: 100%;
@@ -4118,7 +4122,7 @@ div.form__container div.webforms-success-text {
 @media screen and (min-width: 1240px) {
 
 	.xmas-photoGrid__block--justText blockquote {
-		font-size: 46px;
+		font-size: 36px;
 	}
 }
 
@@ -4186,7 +4190,7 @@ div.form__container div.webforms-success-text {
 @media screen and (min-width: 1240px) {
 
 	.xmas-photoGrid__block--dates h3 {
-		font-size: 46px;
+		font-size: 36px;
 	}
 }
  
