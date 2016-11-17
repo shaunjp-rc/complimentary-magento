@@ -71,6 +71,14 @@ p.banner__text {font-family: 'poppinsregular', 'Helvetica Neue', Helvetica, Aria
     border-color: #FF685D;
 }
 li.dropdown.parent.level0.parent_has_full span {font-family: 'poppinsregular', 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#b2b2b2; font-size: 19px; text-transform: uppercase;}
+
+@media screen and (max-width: 1110px) {
+
+ li.dropdown.parent.level0.parent_has_full span {
+  font-size: 15px;
+ }
+}
+
 li.level0 span {font-family: 'poppinsregular', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 19px; text-transform: uppercase; color:#b2b2b2;}
 .mmcontainer{width:100%; float:left;}
 .mensheader{color:#9CAC25;}
