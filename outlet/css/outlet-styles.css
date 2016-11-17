@@ -938,3 +938,6 @@ html .cm-holder img:last-child{height: 22px;right: -150px;width: auto !important
 @media only screen and (max-width: 600px) {
 .product-cart-total{display:block !important;   text-align: left !important;}
 }
+
+/* shipping totals block */
+.checkout-cart-index .shippingtotalscart{float: left;}
