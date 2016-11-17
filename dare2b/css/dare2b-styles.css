@@ -103,7 +103,7 @@ header#header, .page-header-container{background: #222; padding: 0;}
 #header-cart.skip-active{top: 52px}
 .minicart-wrapper > .block-subtitle + div{overflow: auto}
 .page-header-container{max-width: 1600px;position: relative;z-index: 999;: 64px}
-.header-minicart .minicart-actions .checkout-button{background: #0080c5 !important}
+.header-minicart .minicart-actions .checkout-button{background: #00c478 !important;}
 .header-minicart .minicart-actions .cart-link{background: #222}
 .header-minicart .info-wrapper td{color: #0080c5; padding-left: 5px;}
 .header-minicart .subtotal .price{color: #0080c5;text-align: right;}
@@ -332,7 +332,7 @@ b{font-size: 18px;}
 /*////////////////////////////////////////
 // CATEGORY PAGE
 ////////////////////////////////////////*/
-#confirmButtons .blue{background: #0080c5 !important}
+#confirmButtons .blue{background:  #00c478 !important}
 html .sub-text h1{font-weight: 500 !important}
 html .sub-text span{font-weight: 100;color: #000;}
 .products-grid .ratings .amount{/* display: none; */}
@@ -657,7 +657,7 @@ button.button.btn-cart {}
 .cart h1, .cart h2, .cart .button, .cart button, .cart a, .cart strong, .cart span{font-family: futura !important}
 .cart strong, .cart button{font-weight: bold; font-size: 1.2em}
 .cart button{box-shadow: 1px 2px 3px rgba(0,0,0,0.2)}
-.cart .button{background: #0080c5 !important}
+.cart .button{background: #00c478  !important;}
 #discount-coupon-form .button-wrapper > button, .cart .giftcard .button-wrapper > button{background: #333 !important}
 .paypal-or{display: none !important}
 .cart #prod-del-methods{border: 1px solid #ddd; padding: 10px; border-radius: 4px; box-shadow: 1px 2px 3px rgba(0,0,0,0.1)}
@@ -1045,3 +1045,8 @@ figure.mz-figure{width:100%;}
 .storelocator-index-index .page-title h1{padding-bottom: 10px;}
 #store_search h2{border: 0;}
 #list-store li .store_name, .store_popup .store_name{color: #0080c5;}
+
+/* CTA buttons */
+.cart-table .product-cart-actions .button{
+  background: #00c478 !important;
+}
