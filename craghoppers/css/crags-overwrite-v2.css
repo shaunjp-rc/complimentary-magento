@@ -3871,21 +3871,6 @@ div.form__container div.webforms-success-text {
     font-size: 16px !important;
 }
 
-/*.xmas-sideNav--subNav {
-    list-style: none outside !important;
-}
-
-.xmas-sideNav--subNav .xmas-sideNav__item {
-    color: #999;
-    padding: 0 0 6px;
-    border: none;
-    font-size: 14px;
-    text-transform: none;
-}
-
-.xmas-sideNav--subNav .xmas-sideNav__item:first-child {
-    padding-top: 12px;
-}*/
 
 .xmas-sideNav__item:hover,
 .xmas-sideNav__item--current {
@@ -3900,7 +3885,7 @@ div.form__container div.webforms-success-text {
     height: 548px;
     position: relative;
     max-width: 1370px;
-    margin: 0 auto 3% auto;
+    margin: 0 auto 1% auto;
     float: none;
 }
 
@@ -3953,16 +3938,8 @@ div.form__container div.webforms-success-text {
     font-family: 'montserratbold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     letter-spacing: 12px;
     line-height: 1;
-    /*quotes: "â€œ" "â€" "â€˜" "â€™";*/
 }
 
-/*.xmas-hero q:before {
-    content: open-quote;
-}
-
-.xmas-hero q:after {
-    content: close-quote;
-}*/
 
 @media screen and (max-width: 980px) {
 
@@ -4018,6 +3995,13 @@ div.form__container div.webforms-success-text {
     text-align: center;
 }
 
+@media screen and (max-width: 580px) {
+
+	.xmas-mainTitle {
+		font-size: 26px;
+	}
+}
+
 .xmas-mainCopy p {
     width: 80%;
     margin: 0 auto 24px;
@@ -4053,23 +4037,9 @@ div.form__container div.webforms-success-text {
     position: relative;
 }
 
-/*.xmas-photoGrid__block .bannerOverlay__cta {
-    display: none;
-}
-
-.xmas-photoGrid__block:hover .bannerOverlay__cta {
-    display: block;
-}*/
-
 .xmas-photoGrid__image {
     width: 100%;
 }
-
-/*.xmas-photoGrid__image--small,
-.xmas-photoGrid__image--tall {
-    float: left;
-    width: 50%;
-}*/
 
 .xmas-photoGrid__block--bottomAligned {
 	vertical-align: bottom;
@@ -4082,7 +4052,6 @@ div.form__container div.webforms-success-text {
 
 .xmas-photoGrid__block--justText {
     padding: 33% 0;
-    /*background-color: #eee9d6;*/
     background: #eee9d6 url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/xmas/Snowflake_76.5x72px.png') no-repeat center 10%;
 }
 
@@ -4119,7 +4088,7 @@ div.form__container div.webforms-success-text {
 	}
 }
 
-@media screen and (min-width: 1240px) {
+@media screen and (min-width: 1140px) {
 
 	.xmas-photoGrid__block--justText blockquote {
 		font-size: 36px;
@@ -4150,6 +4119,13 @@ div.form__container div.webforms-success-text {
 	margin-bottom: 12%;
 }
 
+@media screen and (max-width: 580px) {
+
+	.xmas-photoGrid__block--dates h3 {
+		font-size: 4.2vw;
+	}
+}
+
 .xmas-photoGrid__block--dates dt,
 .xmas-photoGrid__block--dates dd {
 	color: #5d5d5d;
@@ -4161,14 +4137,12 @@ div.form__container div.webforms-success-text {
 
 
 .xmas-photoGrid__block--dates dt {
-	/*width: 70%;*/
 	float: left;
 	clear: left;
 }
 
 
 .xmas-photoGrid__block--dates dd {
-	/*width: 30%;*/
 	float: right;
 	text-align: right;
 	clear: right;
@@ -4184,6 +4158,22 @@ div.form__container div.webforms-success-text {
 	.xmas-photoGrid__block--justText, 
 	.xmas-photoGrid__block--dates {
 		background-size: 12%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+
+	.xmas-photoGrid__block--dates dt,
+	.xmas-photoGrid__block--dates dd {
+		font-size: .8em;
+	}
+}
+
+@media screen and (max-width: 580px) {
+
+	.xmas-photoGrid__block--dates dt,
+	.xmas-photoGrid__block--dates dd {
+		font-size: 1em;
 	}
 }
 
@@ -4223,20 +4213,23 @@ div.form__container div.webforms-success-text {
 
 .xmas-photoGrid__overlayContent {
 	display: -webkit-flex;
+	display: -ms-flexbox;
    	display: flex;
    	-webkit-flex-direction: column;
+   	-ms-flex-direction: column;
    	flex-direction: column;
    	height: 100%;
    	-webkit-justify-content: flex-end;
+   	-ms-justify-content: flex-end;
    justify-content: flex-end;
-   padding: 0 10% 15%;
+   padding: 0 8% 15%;
    text-align: center;
 }
 
 .xmas-photoGrid__block--topAligned .xmas-photoGrid__overlayContent {
 	-webkit-justify-content: flex-start;
    justify-content: flex-start;
-   padding: 85% 10% 0;
+   padding: 85% 8% 0;
 }
 
 @media screen and (max-width: 1000px) {
@@ -4267,19 +4260,35 @@ div.form__container div.webforms-success-text {
 @media screen and (max-width: 840px) {
 
 	.xmas-photoGrid__title {
+		font-size: 1.6em;
+	}
+}
+
+@media screen and (max-width: 580px) {
+
+	.xmas-photoGrid__title {
 		font-size: 2em;
 	}
 }
 
-@media screen and (min-width: 1240px) {
+@media screen and (max-width: 420px) {
+
+	.xmas-photoGrid__title {
+		font-size: 1.6em;
+	}
+}
+
+
+@media screen and (min-width: 1040px) {
 
 	.xmas-photoGrid__title {
 		font-size: 34px;
 	}
 }
 
+
 .xmas-photoGrid__button {
-	padding: 2% 0;
+	padding: 2% 5%;
 	background: rgba(255,255,255,0.6);
 	border: 1px #333 solid;
 	width: 70%;
@@ -4287,6 +4296,7 @@ div.form__container div.webforms-success-text {
 	text-transform: uppercase;
 	font-family: 'montserratbold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: #333;
+	float: left;
 }
 
 .xmas-photoGrid__button:hover {
@@ -4400,7 +4410,6 @@ div.form__container div.webforms-success-text {
 
 .xmas-shop {
     padding-top: 2vw;
-    /*padding-bottom: 2vw;*/
 }
 
 .xmas-shop__block {
@@ -4416,7 +4425,6 @@ div.form__container div.webforms-success-text {
 
 .xmas-shop__categoryName {
     text-align: center;
-    /*text-transform: none;*/
     font-family: 'montserratregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     letter-spacing: 0;
     background-color: #e7e6e4;
@@ -4475,23 +4483,6 @@ div.form__container div.webforms-success-text {
     display: block;
 }
 
-/*.xmas-sideBar--horizontal .xmas-sidebar__logo {
-    width: 260px;
-    float: left;
-}*/
-
-/*.xmas-sideBar--horizontal .xmas-sideBar__title {
-    margin-top: 0;
-    padding-top: 0;
-    border-top: none;
-    text-align: center;
-    border-bottom: 1px #000 solid;
-    float: left;
-    width: 80%;
-    width: calc(100% - 260px);
-    margin-bottom: 12px;
-    padding-bottom: 6px;
-}*/
 
 .xmas-sideBar--horizontal__burger {
     float: right;
