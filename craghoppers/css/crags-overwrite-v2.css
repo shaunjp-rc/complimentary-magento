@@ -4613,3 +4613,171 @@ div.form__container div.webforms-success-text {
 
 
 }
+
+
+/* Black Friday Styles */
+
+.fullWidthSlider .pageBanner__image--blackfriday {
+    height: 31.6vw;
+    background: #000;
+}
+.bannerOverlay__contentArea--blackfriday {
+    padding-bottom: 13%;
+}
+.blackfriday-friday{
+  font-family: 'montserratlight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  display: inline-block;
+}
+.bannerOverlay__title--blackfriday {
+    font-size: 3.7vw;
+    letter-spacing: 8px;
+}
+.bannerOverlay__subTitle--blackfriday {
+    font-size: 3vw;
+    letter-spacing: 6px;
+}
+@media screen and (min-width: 980px){
+.bannerOverlay__subTitle--blackfriday {
+    font-size: 3.2vw;
+}
+.bannerOverlay__title--blackfriday{
+  font-size: 4vw;
+}
+
+}
+@media screen and (max-width: 680px){
+.fullWidthSlider .pageBanner__image--blackfriday {
+    height: 65.8vw;
+}
+.bannerOverlay__title--blackfriday {
+    font-size: 5.4vw;
+}
+.bannerOverlay__subTitle--blackfriday {
+    font-size: 3.8vw;
+}
+.pageSection--thirds .pageBanner--blackfriday,
+.pageSection--thirds:nth-of-type(2) .pageBanner--blackfriday{
+  margin-bottom: 5%;
+}
+}
+
+.pageBanner__image--blackfriday{
+  position: relative;
+}
+.pageBanner__blackfridayHover{
+  display: none;
+}
+
+.pageBanner__blackfridayHover a {
+    border: 1px solid #fff;
+    display: inline-block;
+    width: 70%;
+    padding: 2% 0;
+    margin-bottom: 3%;
+    color:#fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.pageBanner__blackfridayHover a:hover {
+    background: rgba(255,255,255,0.3);
+}
+.pageBanner__blackfridayHover a:first-child {
+    margin-top: 35%;
+}
+.pageBanner__text{
+    color: white;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 19px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'montserratlight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+}
+.pagebanner__text--break {
+    width: 25%;
+    margin: 5% auto;
+    border: 1px solid #fff;
+}
+.pageBanner__blackfridayHover a:nth-child(2) {
+    margin-top: 30%;
+}
+@media screen and (min-width: 1024px){
+  .pageBanner:hover .pageBanner__blackfridayHover {
+  display: block;
+    position: absolute;
+    width: 100%;
+    background-color: #000;
+    height: 100%;
+    top: 0;
+    text-align: center;
+}
+.pageBanner__blackfridayHover .pageBanner__text{
+  display: none;
+}
+}
+@media screen and (max-width: 1024px){
+.pageBanner__blackfridayHover {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    text-align: center;
+}
+.pageBanner:hover .pageBanner__blackfridayHover {
+  background-color: transparent;
+}
+.pageBanner__text {
+    display: none;
+}
+.pageBanner__blackfridayHover .pageBanner__text {
+    display: block;
+    position: relative;
+    top: 0;
+    transform: none;
+    margin:14% 0;
+}
+.pageBanner__blackfridayHover a:nth-child(2) {
+    margin-top: 0;
+}
+}
+.bannerOverlay__contentArea--blackfriday-TEST {
+    padding-bottom: 8%;
+}
+.pageSection__title span{
+  font-family: 'montserratlight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.categoryBanner__noimage {
+    background-color: #000;
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    width: 100%;
+}
+.categoryBanner__noimage .split:after {
+    content: '';
+    width: 15%;
+    border: 1px solid #fff;
+    display: block;
+    margin: 1% auto;
+}
+.categoryBanner__title--blackfriday span,
+.categoryBanner__title--blackfriday-sub{
+	font-family: 'montserratlight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.categoryBanner__title--blackfriday{
+	font-size:50px;
+}
+.categoryBanner__title--blackfriday-sub{
+	font-size: 55px;
+}
+@media only screen and (max-width: 1200px){
+.categoryBanner__title--blackfriday-sub{
+font-size: 4.6vw;
+}
+}
+
+/* Black Friday Styles END */
