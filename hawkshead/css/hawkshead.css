@@ -2483,3 +2483,61 @@ body{
   display: none;
 }
 /* END */
+
+@media only screen and (min-width:768px) and (max-width: 979px){
+  .slidersubtext--second {
+    font-size: 2.3vw;
+  }
+}
+
+/* Black Friday Styles */
+.slidersubtext--blackfriday{
+    font-size: 5vw;
+    line-height: 1;
+    letter-spacing: 5px;
+    font-family: 'poppinsbold', 'Helvetica Neue', Helvetica, 'Arial Black', Arial, sans-serif;
+    text-transform: uppercase;
+}
+.sliderheader--blackfriday{
+  font-size: 2vw;
+  margin-top: 6%;
+  font-family: 'poppinsregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.sliderstrip__desktop--blackfriday{
+  margin-top: 1.3%;
+}
+
+
+@media only screen and (max-width: 767px){
+.sliderheader--blackfriday{
+  font-size: 3vw;
+  margin-top: 14%;
+}
+.slidersubtext--blackfriday{
+  font-size: 9vw;
+}
+
+}
+
+.sliderstrip__desktop--blackfriday-weekend {
+    background: rgba(245,209,1,0.7);
+}
+.slidersubtext--blackfriday-weekend {
+    font-size: 6vw;
+    color: #f5d101;
+}
+.sliderheader--blackfriday-weekend {
+    font-size: 4vw;
+    font-family: 'poppinsbold', 'Helvetica Neue', Helvetica, 'Arial Black', Arial, sans-serif;
+}
+@media only screen and (max-width: 768px){
+  .sliderheader--blackfriday-weekend {
+    letter-spacing: 5px;
+    margin-top: 19%;
+}
+.slidersubtext--blackfriday-weekend {
+    font-size: 9vw;
+}
+}
+
+/* Black Friday Styles END */
