@@ -3805,6 +3805,12 @@ div.form__container div.webforms-success-text {
 /* Do not use xmas- prefix classes anywhere other than Xmas Microsite pages */
 /* Refactor/rename if layout/style is needed again */
 
+.cms-christmas .main {
+	background-image: url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/xmas/SnowflakeTop_1300x744px.png'),
+					url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/xmas/SnowflakeLower_1300x744px.png');
+	background-repeat: no-repeat, no-repeat;
+	background-position: top left, bottom right;
+}
 
 .cms-christmas .breadcrumbs {
     display: none;
