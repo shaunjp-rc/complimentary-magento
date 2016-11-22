@@ -4095,13 +4095,11 @@ div.form__container div.webforms-success-text {
 	}
 }
 
-/*.xmas-photoGrid__block--dates {
-	background: #495a6e;
-}
-*/
 .xmas-photoGrid__block--datesInnerContent {
-	padding: 0 10%;
-	background: #495a6e;
+	padding: 33.5% 10%;
+	background: #495a6e url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/xmas/SNOWFLAKE.gif') no-repeat;
+	height: 0;
+	background-size: 100%;
 }
 
 
@@ -4110,13 +4108,39 @@ div.form__container div.webforms-success-text {
 	color: #fff;
 	font-size: 2.4vw;
 	font-family: 'montserratregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	letter-spacing: 6px;
+	letter-spacing: 4px;
+	margin: 9% 0;
+}
+
+.xmas-photoGrid__block--dates h3 span {
+	font-family: 'montserratbold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .xmas-photoGrid__block--dates p {
 	color: #fff;
-	margin: 0;
-	text-align: center; 
+	margin: -30% 0 0;
+	text-align: center;
+}
+
+.xmas-photoGrid__block--dates table {
+	color: #fff;
+	font-family: 'montserratregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+/*.xmas-photoGrid__block--dates td,
+.xmas-photoGrid__block--dates th {
+	border-bottom: 1px dotted #fff;
+}*/
+
+.xmas-photoGrid__block--dates td {
+	text-align: right;
+}
+
+/*.xmas-photoGrid__block--dates dl {
+	background: #495a6e;
 }
 
 .xmas-photoGrid__block--dates dt,
@@ -4125,12 +4149,14 @@ div.form__container div.webforms-success-text {
 	text-transform: uppercase;
 	font-family: 'montserratregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 1.2em;
+	background: #495a6e;
 }
 
 
 .xmas-photoGrid__block--dates dt {
 	float: left;
 	clear: left;
+	position: relative;
 }
 
 
@@ -4138,6 +4164,7 @@ div.form__container div.webforms-success-text {
 	float: right;
 	text-align: right;
 	clear: right;
+	position: relative;
 }
 
 @media screen and (max-width: 780px) {
@@ -4166,6 +4193,22 @@ div.form__container div.webforms-success-text {
 	.xmas-photoGrid__block--dates dt,
 	.xmas-photoGrid__block--dates dd {
 		font-size: 1em;
+	}
+}*/
+
+@media screen and (max-width: 780px) {
+
+	.xmas-photoGrid__block--justText {
+		background-size: 12%;
+	}
+
+	.xmas-photoGrid__block--dates h3 {
+		font-size: 16px;
+		margin: 5% 0;
+	}
+
+	.xmas-photoGrid__block--dates table {
+		font-size: 14px;
 	}
 }
 
