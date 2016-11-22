@@ -3805,6 +3805,12 @@ div.form__container div.webforms-success-text {
 /* Do not use xmas- prefix classes anywhere other than Xmas Microsite pages */
 /* Refactor/rename if layout/style is needed again */
 
+.cms-christmas .main {
+	background-image: url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/xmas/SnowflakeTop_1300x744px.png'),
+					url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/xmas/SnowflakeLower_1300x744px.png');
+	background-repeat: no-repeat, no-repeat;
+	background-position: top left, bottom right;
+}
 
 .cms-christmas .breadcrumbs {
     display: none;
@@ -4288,7 +4294,7 @@ div.form__container div.webforms-success-text {
 .xmas-photoGrid__title {
 	color: #721818;
 	font-family: 'montserratregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 2.4em;
+	font-size: 2em;
 	letter-spacing: 4px;
 }
 
@@ -4548,10 +4554,20 @@ div.form__container div.webforms-success-text {
     margin-top: 12px;
 }
 
+@media screen and (max-width: 860px) {
+
+	.xmas-sideBar--horizontal .xmas-sideBar__title {
+		width: 160px;
+	}
+
+	.xmas-sideBar--horizontal .xmas-sideNav {
+		width: calc(100% - 160px);
+	}	
+}
+
 .xmas-sideBar--horizontal .xmas-sideNav__item {
     display: inline-block;
-    width: 25%;
-    text-align: center;
+    width: 33%;
 }
 
 @media screen and (max-width: 520px) {
