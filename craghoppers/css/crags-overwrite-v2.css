@@ -4095,44 +4095,36 @@ div.form__container div.webforms-success-text {
 	}
 }
 
-.xmas-photoGrid__block--dates {
-	background: #fff url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/xmas/DiaryIcon_76.5x72px.png') no-repeat center 10%;
+/*.xmas-photoGrid__block--dates {
+	background: #495a6e;
 }
-
-.xmas-photoGrid__block--datesInner {
-	border: 3px #666 solid;
-	padding: 33% 0;
-}
-
+*/
 .xmas-photoGrid__block--datesInnerContent {
-	height: 0;
 	padding: 0 10%;
+	background: #495a6e;
 }
+
 
 .xmas-photoGrid__block--dates h3 {
 	text-align: center;
-	color: #5d5d5d;
-	font-size: 3.4vw;
+	color: #fff;
+	font-size: 2.4vw;
 	font-family: 'montserratregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	letter-spacing: 6px;
-	margin-top: -1.3em;
-	margin-bottom: 12%;
 }
 
-@media screen and (max-width: 580px) {
-
-	.xmas-photoGrid__block--dates h3 {
-		font-size: 4.2vw;
-	}
+.xmas-photoGrid__block--dates p {
+	color: #fff;
+	margin: 0;
+	text-align: center; 
 }
 
 .xmas-photoGrid__block--dates dt,
 .xmas-photoGrid__block--dates dd {
-	color: #5d5d5d;
+	color: #fff;
 	text-transform: uppercase;
 	font-family: 'montserratregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 1.2em;
-	background: #fff;
 }
 
 
@@ -4180,7 +4172,7 @@ div.form__container div.webforms-success-text {
 @media screen and (min-width: 1240px) {
 
 	.xmas-photoGrid__block--dates h3 {
-		font-size: 36px;
+		font-size: 22px;
 	}
 }
  
