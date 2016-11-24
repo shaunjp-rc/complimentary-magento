@@ -1,2 +1,132 @@
 /* Hawkshead New Theme Override Styles */
 
+.block-layered-nav--no-filters .block-title {
+    display: block;
+}
+.pageintro {
+    float: left;
+}
+.toolbar {
+    clear: both;
+}
+ul.products-grid {
+    border-top: none !important;
+}
+.catalog-category-view select,
+.catalog-product-view select {
+    display: inline-block;
+}
+.sorter .sort-by{
+	float:right;
+	width: 75%;
+}
+.pager{
+	float:left;
+	width: 60%;
+}
+.toolbar .sorter {
+    width: 40%;
+}
+.pager > .count-container {
+    float: right;
+    width: 61%;
+}
+.pages {
+    float: left;
+}
+.quickbuy {
+    display: none;
+}
+.sorter .sort-by select {
+    width: 57%;
+}
+.pager .limiter {
+    width: 50%;
+    float: right;
+}
+.limiter select {
+    width: 60%;
+}
+.toolbar .amount.amount--has-pages {
+    display: none;
+}
+.toolbar-bottom .toolbar .amount.amount--has-pages {
+    display: block;
+}
+.catalog-product-view .price-label {
+    display: none;
+}
+
+@media only screen and (max-width: 1100px){
+p.old-price {
+    padding-bottom: 1%;
+    margin: 0;
+}
+p.special-price {
+    margin-top:1%;
+}
+
+}
+
+@media only screen and (max-width: 979px){
+.col2-left-layout .pager.pager {
+    width: 60%;
+    clear: none;
+}
+
+.count-container,
+.sorter{
+	display: none;
+}
+.col2-left-layout .toolbar-bottom .pager.pager {
+    width: 23%;
+    float: none;
+    margin: 0 auto;
+    min-width: 160px;
+}
+.toggle-content dl dd ol li {
+    line-height: 1;
+}
+.toggle-content dl dd ol li a {
+    padding: 0px 2px;
+}
+.sidebar .block.block-layered-nav .block-title:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    display: block;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #000;
+    border-right: none;
+    left: 93%;
+    top: 40%;
+}
+.sidebar .block.block-layered-nav .block-title.block-title--open:after {
+    border-width: 4px 4px 0 4px;
+    border-color: #000 transparent transparent transparent;
+    border-style: solid;
+}
+
+
+}
+
+@media only screen and (max-width: 767px) and (min-width: 480px){
+.catalog-category-view .col-left.sidebar {
+    margin-top: 0 !important; 
+    display: block;
+}
+
+}
+
+@media only screen and (max-width: 480px){
+.products-grid > li {
+    width: 46%;
+}
+.products-grid > li,
+.products-grid > li:nth-child(3n) {
+    margin-right: 3.7037%;
+}
+
+}

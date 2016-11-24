@@ -4827,3 +4827,7 @@ font-size: 4.6vw;
 }
 
 /* Black Friday Styles END */
+
+.flex-direction-nav {
+    height: 0;
+}
