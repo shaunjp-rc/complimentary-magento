@@ -2549,3 +2549,298 @@ body{
 }
 
 /* Black Friday Styles END */
+
+/* Christmas Micro Site */
+.christmas__container{
+  float:left;
+  width:100%;
+  font-family: 'poppinsregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.christmas_banner{
+  float:left;
+  width:100%;
+}
+.christmas__card{
+  float:left;
+  width:32.66%;
+}
+.christmas__row a:last-child .christmas__card {
+    margin-right: 0;
+}
+.christmas__row{
+  float:left;
+  width:100%;
+  margin-bottom: 1%;
+}
+.christmas__card--empty{
+  background-color: transparent;
+}
+.christmas__row a:nth-child(2) .christmas__card {
+    margin: 0 1%;
+}
+.christmas__card:nth-child(2) {
+    margin: 0 1%;
+}
+.christmas__hero img {
+    width: 100%;
+    border: 5px solid #fff;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.christmas__hero {
+    background-color: #e8e9e3;
+    padding: 5%;
+}
+.christmas__wrap {
+    position: absolute;
+    margin-top: -9%;
+    float: left;
+    width: 30.7%;
+    color: #fff;
+    padding: 1%;
+    text-align: center;
+    font-size: 16px;
+    max-width: 411px;
+}
+
+.christmas__wrap--left:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 20px 26px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -4.86%;
+}
+.christmas__wrap--right:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 0 0 26px;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -4.86%;
+}
+.christmas__card:hover .christmas__hero-male{
+  background-color: red;
+}
+.christmas__wrap--mens{
+  background-color: #425d78;
+}
+.christmas__wrap--womens{
+  background-color: #799ecb;
+}
+.christmas__wrap--kids{
+  background-color: #73874a;
+}
+.christmas__wrap--red {
+  background-color: #d83e40;
+}
+.christmas__wrap--mens.christmas__wrap--left:before {
+  border-color: transparent transparent #203b44 transparent;
+}
+.christmas__wrap--womens.christmas__wrap--left:before {
+  border-color: transparent transparent #6689af transparent;
+}
+.christmas__wrap--kids.christmas__wrap--left:before {
+  border-color: transparent transparent #64713b transparent;
+}
+.christmas__wrap--red.christmas__wrap--left:before {
+  border-color: transparent transparent #a83834 transparent;
+}
+.christmas__wrap--mens.christmas__wrap--right:before{
+  border-color: transparent transparent transparent #203b44;
+}
+.christmas__wrap--mens.christmas__wrap--right:before{
+  border-color: transparent transparent transparent #6689af;
+}
+.christmas__wrap--kids.christmas__wrap--right:before{
+  border-color: transparent transparent transparent #64713b;
+}
+.christmas__wrap--red.christmas__wrap--right:before{
+  border-color: transparent transparent transparent #a83834;
+}
+.christmas_banner img{
+  margin: 0 auto;
+}
+.christmas__subheading {
+    width: 58%;
+    text-align: center;
+    margin: 0 auto;
+    clear: both;
+    color: #adadad;
+    padding: 2% 0 4% 0;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+.christmas__lownav {
+    background-color: #5d768c;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+.christmas__lownav--gender {
+    margin: 0 auto;
+    display: inline-block;
+    color: #fff;
+    padding: 15px 35px;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-right: 0%;
+    font-family: 'poppinsbold', 'Helvetica Neue', Helvetica, 'Arial Black', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+.christmas__card:hover .christmas__hero--mens{
+  background-color: #cdf0ea;
+}
+.christmas__card:hover .christmas__hero--womens{
+  background-color: #F29796;
+}
+.christmas__card:hover .christmas__hero--kids{
+  background-color: #a4bf6b;
+}
+.christmas__card:hover .christmas__hero--other{
+  background-color: #f7bfbf;
+}
+.christmas__lowtext {
+    color: #E1554E;
+    text-align: center;
+    float: left;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: 'poppinsbold', 'Helvetica Neue', Helvetica, 'Arial Black', Arial, sans-serif;
+    letter-spacing: 2px;
+    margin: 3% 0;
+}
+.christmas__container--desktop{
+  display: block;
+}
+.christmas__container--mobile{
+  display: none;
+}
+.christmas__lowimg {
+    float: left;
+    width: 100%;
+    background: #EDEDE9;
+    padding: 5% 0;
+    background-image: url(//dm5gggopeleel.cloudfront.net/images/AW16/Christmas+Microsite/_HollyLeft_131x139px.png), url(//dm5gggopeleel.cloudfront.net/images/AW16/Christmas+Microsite/_Holly_131x139px.png);
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+    margin-bottom: 1%;
+}
+.christmas__lowimg p {
+    margin: 0;
+    text-align: center;
+    color: #6C879C;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+.christmas__lowimg p span {
+    font-family: 'poppinsbold', 'Helvetica Neue', Helvetica, 'Arial Black', Arial, sans-serif;
+}
+@media only screen and (max-width: 1280px){
+.christmas__wrap--right:before {
+    border-width: 1.6vw 0 0 2vw;
+}
+.christmas__wrap--left:before {
+    border-width: 0 0 1.6vw 2vw;
+}
+
+}
+
+@media only screen and (max-width: 780px){
+.christmas__lowimg p {
+  font-size: 4.1vw;
+}
+.christmas__lowimg{
+  background-image:none;
+}
+
+}
+
+@media only screen and (max-width: 700px){
+.christmas__container--desktop{
+  display: none;
+}
+.christmas__container--mobile{
+  display: block;
+}
+.christmas__card {
+    width: 49.5%;
+}
+.christmas__row a:nth-child(2) .christmas__card,
+.christmas__row a:nth-child(4) .christmas__card,
+.christmas__row a:nth-child(6) .christmas__card,
+.christmas__row a:nth-child(8) .christmas__card {
+    margin: 0 0 0 1%;
+    float:right;
+
+}
+.christmas__row a:nth-child(2) .christmas__card {
+    margin-top: 34.5%;
+}
+.christmas__wrap {
+    width: 47.5%;
+    font-size: 3vw;
+    margin-top: -17%;
+}
+.christmas__wrap--left:before {
+    border-width: 0 0 2.5vw 3.3vw;
+}
+.christmas__lowtext {
+    font-size: 4vw;
+}
+.christmas__lownav {
+    background-color: transparent;
+}
+.christmas__lownav--gender {
+    background-color: #5d768c;
+    width: 100%;
+    margin-bottom: 1%;
+    padding: 15px 0;
+}
+.christmas__subheading {
+    width: 78%;
+    font-size: 3.2vw;
+}
+.christmas__card--decoration-first{
+  float: right;
+    width: 48.5%;
+}
+.christmas__card--left {
+    float: left;
+}
+.christmas__card--right {
+    float: right;
+}
+.christmas__card--decoration-right {
+    float: right;
+}
+.christmas__card--decoration-left {
+    float: left;
+}
+.christmas__lowercontainer {
+    float: left;
+    width: 100%;
+}
+
+
+}
+
+@media only screen and (max-width: 479px){
+.christmas__wrap {
+    width: 46.5%;
+}
+
+}
+
+/* Christmas Micro Site END */
