@@ -56,6 +56,71 @@ ul.products-grid {
 .catalog-product-view .price-label {
     display: none;
 }
+.catalog-product-view .price-box .special-price .price {
+    margin-top: 0;
+}
+.catalog-product-view .product-shop .price-box .special-price {
+    margin-bottom: 0;
+}
+.catalog-product-view .product-shop .price-box {
+    margin-bottom: 0;
+}
+.product-options-bottom,
+.add-to-cart{
+	float:left;
+	width:100%;
+}
+.product-view .add-to-cart-buttons {
+    width: 65%;
+}
+.product-view .product-options .swatch-attr.last {
+    float: left;
+}
+.product-view .product-options .swatch-attr {
+    width: 8%;
+    min-width: 50px;
+}
+.product-view .add-to-cart .qty-wrapper label {
+    background-color: transparent;
+    padding: 10px 10px 10px 0;
+}
+.product-view .add-to-cart .qty-wrapper .plusandminus {
+    background: transparent;
+}
+.product-view .add-to-cart .qty-wrapper span {
+    background: transparent;
+    border: 1px solid #000;
+    width: 39px;
+}
+.plusandminus input {
+    height: 39px;
+    border-radius: 0;
+    margin-top: -1px;
+}
+.product-shop .sizeGuideButton {
+    width: 30%;
+}
+.product-view .add-to-cart {
+    padding-top: 0;
+}
+.product-view .add-to-cart .qty-wrapper span:hover {
+    background: transparent;
+}
+.box-related .item img {
+    width: 100%;
+}
+.tab-content .std {
+    z-index: 1;
+}
+dt.tab.current {
+    z-index: 2;
+}
+p.percentOffContainer {
+    display: none !important;
+}
+.product-view .product-shop .ratings {
+    margin: 0;
+}
 
 @media only screen and (max-width: 1100px){
 p.old-price {
@@ -64,6 +129,12 @@ p.old-price {
 }
 p.special-price {
     margin-top:1%;
+}
+.product-view .add-to-cart .qty-wrapper .plusandminus {
+    width: 100%;
+}
+.product-shop .product-options {
+    margin-bottom: 10px;
 }
 
 }
@@ -112,9 +183,50 @@ p.special-price {
 
 }
 
+@media only screen and (max-width: 860px) and (min-width: 801px){
+.product-collateral .toggle-tabs li > span {
+    font-size: 10px;
+}
+
+}
+
+@media only screen and (max-width: 800px){
+.product-view .add-to-cart-buttons {
+    width: 100%;
+}
+.product-shop .product-options {
+    margin-top: 0px;
+}
+
+}
+
+@media only screen and (max-width: 770px){
+dd.tab-container.current {
+    left: 0;
+}
+
+}
+
 @media only screen and (max-width: 767px) and (min-width: 480px){
 .catalog-category-view .col-left.sidebar {
     margin-top: 0 !important; 
+    display: block;
+}
+
+}
+
+@media screen and (max-width: 500px){
+.product-shop .tabs li {
+    border-right: none;
+}
+
+}
+
+@media only screen and (max-width: 484px){
+.box-related .item, .box-up-sell .products-grid li.item {
+    width: 60%;
+    margin: 0 auto !important;
+    float: none;
     display: block;
 }
 
