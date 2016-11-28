@@ -1,5 +1,180 @@
 /* Hawkshead New Theme Override Styles */
 
+.genderheader {
+	width: 95.4%;
+}
+
+.mmimage {
+	float: none;
+}
+
+/* Homepage */
+
+.flexslider {
+	position: relative;
+}
+
+.flexslider,
+.slides {
+	width: 100%;
+}
+
+.flexslider p {
+	margin: 0;
+}
+
+.slides li {
+	display: table !important;
+	width: 100%;
+	height: 100%;
+}
+
+.sliderfullwidth__container {
+	display: table-cell !important;
+	vertical-align: bottom;
+	height: 100%;
+}
+
+p.sliderheader {
+	margin: 8% 0 2%;
+}
+
+.sliderstrip__desktop {
+	margin: 2% 0 0;
+}
+
+@media screen and (max-width: 768px) {
+
+	.sliderstrip__desktop {
+		margin: 0;
+	}
+}
+
+
+ul.flex-direction-nav {
+	position: absolute;
+	margin: 0;
+	z-index: 100;
+	width: 100%;
+	height: 63px;
+	top: 0;
+}
+
+.flex-direction-nav li a {
+	margin: 0;
+	display: block; 
+	position: absolute;
+	cursor: pointer;
+	text-indent: -9999px;
+	top: calc(14.6vw + 63px);
+}
+
+.flex-direction-nav li a.flex-prev {
+	background-position: 0 0; 
+	left: 3%; 
+	background: url(https://s3-eu-west-1.amazonaws.com/hawkshead-static-images-live/images/SS16/Sliders/Assets/sliders+arrows-11.png);
+    height: 63px; 
+    width: 45px;
+}
+
+.flex-direction-nav li a.flex-next {
+	background-position: 0;
+	right: 3%;
+	background: url(https://s3-eu-west-1.amazonaws.com/hawkshead-static-images-live/images/SS16/Sliders/Assets/sliders+arrows-12.png);
+    height: 63px;
+    width: 45px;
+}
+
+.flex-control-paging,
+.flex-direction-nav li a.prev,
+.flex-direction-nav li a.next {
+	display: none;
+}
+
+
+@media screen and (max-width: 960px) {
+
+	.slidersubtext {
+		font-size: 18px;
+	}
+
+	.flex-direction-nav li a {
+		top: calc(14.6vw + 54px);
+	}
+}
+
+
+@media screen and (max-width: 770px) {
+
+	header#header {
+		z-index: 50;
+	}
+
+	#header:after {
+		content: '';
+		display: table;
+	}
+
+	#header-account {
+		margin-top: 40px;
+	}
+
+	.skip-links {
+		overflow: visible;
+	}
+}
+
+p.collectionhighlights__hoverstate--header {
+	margin: 9% 0;
+}
+
+.transparentfullwidth--green .fourblocks__container .fourblocks img {
+	max-width: 100%;
+}
+
+.containercenter {
+	width: 98%;
+}
+
+.transparentfullwidth--blue .fourblocks__container {
+	width: 21%;
+	margin-right: 4%;
+}
+
+@media screen and (max-width: 768px) {
+
+	.fourblocks__container:nth-child(2) {
+		margin-right: 0;
+	}
+
+	p.sliderheader {
+		margin-top: 28%;
+	}
+}
+
+@media screen and (max-width: 660px) {
+
+	.flex-direction-nav {
+		display: none;
+	}
+
+	p.sliderheader {
+		margin-top: 20%;
+	}
+}
+
+@media screen and (max-width: 545px) {
+
+	p.sliderheader {
+		margin-top: 10%;
+	}
+
+	.slidersubtext {
+		font-size: 14px;
+	}
+}
+
+
 .block-layered-nav--no-filters .block-title {
     display: block;
 }
