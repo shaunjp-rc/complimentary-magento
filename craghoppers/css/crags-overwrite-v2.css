@@ -4826,4 +4826,63 @@ font-size: 4.6vw;
 }
 }
 
+.pageBanner__image--cybermonday{
+  background: #000000;
+  background: -moz-linear-gradient(top,  #000000 53%, #ed1a3a 100%);
+  background: -webkit-linear-gradient(top,  #000000 53%,#ed1a3a 100%);
+  background: linear-gradient(to bottom,  #000000 53%,#ed1a3a 100%);
+  height: 31.6vw;
+}
+.bannerOverlay__subTitle--cybermonday {
+    font-family: 'montserratbold', 'Arial Black', Gadget, Helvetica, Arial, sans-serif;
+}
+.bannerOverlay__title--cybermonday,
+.bannerOverlay__subTitle--cybermonday-thin {
+    font-family: 'montserratlight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.bannerOverlay__title--cybermonday,
+.bannerOverlay__subTitle--cybermonday {
+    font-size: 4vw;
+    letter-spacing: 6px;
+}
+.bannerOverlay__subTitle--cybermonday-code {
+    font-size: 2vw;
+    margin-top: 1.5%;
+}
+
+@media screen and (max-width: 980px){
+a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cybermonday {
+    width: 32%;
+}
+
+}
+
+@media screen and (max-width: 680px){
+.pageBanner__image--cybermonday {
+    height: 65.8vw;
+}
+.bannerOverlay__title--cybermonday,
+.bannerOverlay__subTitle--cybermonday {
+    font-size: 4.7vw;
+    letter-spacing: 4px;
+    margin-top: 0vw;
+}
+.bannerOverlay__title--cybermonday{
+  margin-top: 0vw;
+}
+.bannerOverlay__subTitle--cybermonday-code {
+    font-size: 3.1vw;
+    margin-top: 4%;
+}
+a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cybermonday {
+    width: 55%;
+}
+
+}
+
+
 /* Black Friday Styles END */
+
+.flex-direction-nav {
+    height: 0;
+}
