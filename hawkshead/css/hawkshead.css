@@ -2548,6 +2548,50 @@ body{
 }
 }
 
+.sliderstrip__desktop--blackfriday-weekend {
+    background: rgba(245,209,1,0.7);
+}
+.slidersubtext--blackfriday-weekend {
+    font-size: 6vw;
+    color: #f5d101;
+}
+.sliderheader--blackfriday-weekend {
+    font-size: 4vw;
+    font-family: 'poppinsbold', 'Helvetica Neue', Helvetica, 'Arial Black', Arial, sans-serif;
+}
+.sliderstrip__desktop--blackfriday {
+    margin-top: 3.3%;
+}
+@media only screen and (max-width: 768px){
+  .sliderheader--blackfriday-weekend {
+    letter-spacing: 5px;
+    margin-top: 19%;
+}
+.slidersubtext--blackfriday-weekend {
+    font-size: 9vw;
+}
+}
+
+.sliderheader--blackfriday {
+    font-size: 4vw;
+    margin-top: 9%;
+}
+.slidersubtext--blackfriday {
+    font-size: 3vw;
+}
+
+@media only screen and (max-width: 767px){
+.slidersubtext--blackfriday {
+    font-size: 6vw;
+    padding: 0 13%;
+}
+.sliderheader--blackfriday {
+    font-size: 6vw;
+    margin-top: 14%;
+}
+
+}
+
 /* Black Friday Styles END */
 
 /* Christmas Micro Site */

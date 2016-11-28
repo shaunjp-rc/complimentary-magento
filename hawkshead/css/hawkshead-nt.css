@@ -17,12 +17,12 @@ ul.products-grid {
     display: inline-block;
 }
 .sorter .sort-by{
-	float:right;
-	width: 75%;
+    float:right;
+    width: 75%;
 }
 .pager{
-	float:left;
-	width: 60%;
+    float:left;
+    width: 60%;
 }
 .toolbar .sorter {
     width: 40%;
@@ -67,8 +67,8 @@ ul.products-grid {
 }
 .product-options-bottom,
 .add-to-cart{
-	float:left;
-	width:100%;
+    float:left;
+    width:100%;
 }
 .product-view .add-to-cart-buttons {
     width: 65%;
@@ -121,6 +121,21 @@ p.percentOffContainer {
 .product-view .product-shop .ratings {
     margin: 0;
 }
+.product-view .add-to-cart .qty-wrapper label {
+    background-color: transparent;
+}
+.product-view .add-to-cart .qty-wrapper .plusandminus,
+.product-view .add-to-cart .qty-wrapper span,
+.product-view .add-to-cart .qty-wrapper span:hover {
+    background: transparent;
+}
+.product-view .add-to-cart .qty-wrapper span {
+    border: 1px solid #000;
+}
+.plusandminus input {
+    height: 40px;
+    border-radius: 0;
+}
 
 @media only screen and (max-width: 1100px){
 p.old-price {
@@ -147,7 +162,7 @@ p.special-price {
 
 .count-container,
 .sorter{
-	display: none;
+    display: none;
 }
 .col2-left-layout .toolbar-bottom .pager.pager {
     width: 23%;
