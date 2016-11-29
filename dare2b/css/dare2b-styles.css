@@ -462,7 +462,7 @@ body .product-options, body .product-options-bottom{display: block !important}
 .product-essential .box-related.box-collateral .block-content li.item{display: inline-block;margin: 1%;width: 95%;padding: 10px 0px;height: 100%;max-height: 105px;margin: 0;}
 .product-essential .box-related.box-collateral .block-content::before{content: " ";box-shadow: inset 0px -50px 10px -20px #ffffff;height: 50px;position: absolute;bottom: 0px;width: 100%;max-width: 80px;z-index: 1;}
 .more-views .product-image-thumbs{max-height: 333px; position: relative;}
-.MagicToolboxSelectorsContainer .altArrow, .box-related .altArrow{position: absolute; top: 0; left: 0; font-weight: bold; width: 40%; margin: 0 30%; text-align: center; padding: 0px; background: rgba(255,255,255,0.7); 
+.MagicToolboxSelectorsContainer .altArrow, .box-related .altArrow{position: absolute; top: 0; left: 0; font-weight: bold; width: 40%; margin: 0 30%; text-align: center; padding: 0px; background: rgba(255,255,255,0.7);
    transform: rotateZ(90deg) scale(1, 1.5); cursor: pointer; color: #111; font-size: 16px; z-index: 99;}
 .MagicToolboxSelectorsContainer .altArrow.next, .box-related .altArrow.next{top: auto; bottom: 0;}
 .more-views .product-image-thumbs::before{content:" ";box-shadow: inset 0px -50px 10px -20px #ffffff;height: 50px;position: absolute;bottom: 0px;width: 100%;max-width: 85px;}
@@ -1063,4 +1063,21 @@ html .newsletter, html .toggles { width: inherit; clear: both; }
 html .redeye-form input { max-width: 100%; }
 .redeye-form button { width: 100%;  }
 
+}
+
+/*Red Eye Form Styles*/
+.redeye-form > div { margin: 1%; float: left; width: 48%; }
+.redeye-form  label { width: 100%; }
+html .redeye-form input { width: 100%; height: 40px; border: 1px solid #cecece; border-radius: 3px; }
+html .newsletter, html .toggles { width: inherit; clear: both; }
+.redeye-form button{clear: both; float: left; margin: 1%; width: 50%; padding: 20px; background: #000000; color: #ffffff; font-size: 20px; text-transform: uppercase; border: 0px; border-radius: 6px;}
+.newsletter.first{clear:both;}
+html .newsletter { clear: none; width: 31%; margin: 1%; border: solid 1px #d0d0d0; padding: 10px; text-align: center; box-shadow: 0px 10px 10px -10px #909090; }
+.form-checkbox { max-width: 18%; text-align: center; border: solid 1px #c5c5c5; padding: 1%; box-shadow: 0px 5px 2px -5px #808080; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; width: 20px !important; }
+
+@media only screen and (max-width: 500px) {
+.redeye-form > div { width: 100%; }
+html .redeye-form input { max-width: 100%; }
+.redeye-form button { width: 100%;  }
 }
