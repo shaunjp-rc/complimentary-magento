@@ -350,8 +350,8 @@ html .sub-text span{font-weight: 100;color: #000;}
 .quickbuy .add-to-cart-box{position: relative}
 #narrow-by-list .price-box .price, .price{ font-weight: 100 !important; }
 .disableBut{width: 50%;height: 40px;position: absolute;right: 4px;top: 0;z-index: 2;}
-.catalog-category-view .products-grid{display: flex; flex-wrap: wrap; margin: 20px}
-.catalog-category-view .products-grid > li{min-width: 0;flex-basis: 280px;flex-grow: 1;margin: 0px !important;padding: 20px !important;box-sizing:  border-box;}
+.catalog-category-view .products-grid, .catalogsearch-result-index .products-grid{display: flex; flex-wrap: wrap; margin: 20px}
+.catalog-category-view .products-grid > li, .catalogsearch-result-index .products-grid > li{min-width: 0;flex-basis: 280px;flex-grow: 1;margin: 0px !important;padding: 20px !important;box-sizing:  border-box;}
 .pager .limiter > label, .sorter label{font-family: futura; font-weight: 500;}
 .sort-by select, .limiter select{width: 100px; border: 1px solid #ccc}
 .category-products .limiter{margin-top: 0;}
