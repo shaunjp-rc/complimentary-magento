@@ -363,7 +363,8 @@ form#discount-coupon-form {
     min-width: 240px;
 }
 .checkout-onepage-index .col2-right-layout .col-main {
-    width: 71%;
+    /*width: 71%;*/
+    width:100%;
     clear: both;
     padding: 0;
 }
@@ -386,8 +387,9 @@ form#discount-coupon-form {
     width: 18%;
 }
 .checkout-onepage-index .col2-right-layout .col-right {
-    width: 25%;
-    margin-left: 2%;
+    /*width: 25%;
+    margin-left: 2%;*/
+    display: none;
 }
 .col1-layout .col-main {
     clear: both;
@@ -395,6 +397,46 @@ form#discount-coupon-form {
 .cart-table thead tr {
     background: #555150;
     color: #fff;
+}
+label[for="billing:use_for_shipping_no"] {
+    background-position: 324px -2px;
+}
+#checkout-shipping-method-load .sp-methods dd, #co-shipping-method-form .sp-methods dd {
+    margin-left: 1%;
+}
+#collect_popup {
+    width: 100%;
+    max-width: 865px;
+}
+.button + .button {
+    margin-left: 0;
+}
+div#popup_button button.button {
+    width: 97%;
+    float: none;
+    margin: 0 auto;
+    margin-top: 1%;
+    display: block;
+}
+.payment-method-options {
+    float: left;
+    width: 96%;
+    padding: 1%;
+}
+.sp-methods label a,
+div#credit-card-form {
+    float: left;
+}
+.sp-methods .form-list {
+    padding-left: 0;
+    float: left;
+}
+p.paypal-logo {
+    float: none;
+    margin: 0 auto;
+}
+ul.checkout-types li {
+    width: 100%;
 }
 
 
@@ -467,6 +509,17 @@ p.special-price {
 
 }
 
+@media only screen and (max-width: 950px){
+#collect_popup {
+    width: 93%;
+}
+div#googleMap{
+    width: 68% !important;
+}
+
+}
+
+
 
 @media only screen and (max-width: 860px) and (min-width: 801px){
 .product-collateral .toggle-tabs li > span {
@@ -505,6 +558,9 @@ dd.tab-container.current {
 #opc-login .col-2 {
     width: 100%;
 }
+div#googleMap {
+    width: 100% !important;
+}
 
 }
 
@@ -534,6 +590,9 @@ td.product-cart-price:before{
 .product-shop .tabs li {
     border-right: none;
 }
+label[for="billing:use_for_shipping_no"] {
+    background-position: 0 22px;
+}
 
 }
 
@@ -561,6 +620,20 @@ td.product-cart-price:before{
 .products-grid > li,
 .products-grid > li:nth-child(3n) {
     margin-right: 3.7037%;
+}
+
+}
+
+@media only screen and (max-width: 421px){
+label[for="billing:use_for_shipping_no"] {
+    background-position: 14px 22px;
+}
+
+}
+
+@media only screen and (max-width: 405px){
+label[for="billing:use_for_shipping_no"] {
+    background-position: 102px 22px;
 }
 
 }
