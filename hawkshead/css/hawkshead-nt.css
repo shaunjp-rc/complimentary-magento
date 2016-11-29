@@ -484,6 +484,18 @@ ul.checkout-types li {
     left: 0;
     padding-left: 0;
 }
+.catalogsearch-result-index .col3-layout .col-wrapper {
+    float: left;
+    width: 100%;
+}
+.catalogsearch-result-index .col3-layout .col-wrapper .col-main {
+    float: left;
+    width: 100%;
+}
+.catalogsearch-result-index .products-grid > li {
+    width: 24%;
+    margin-right: 1%;
+}
 
 
 
@@ -552,6 +564,9 @@ p.special-price {
 }
 .checkout-onepage-index .col2-right-layout .col-main {
     width: 100%;
+}
+.catalogsearch-result-index .products-grid > li {
+    width: 32%;
 }
 
 }
@@ -625,6 +640,9 @@ dd.tab-container.current {
 div#googleMap {
     width: 100% !important;
 }
+.catalogsearch-result-index .products-grid li.item {
+    width: 49%!important;
+}
 
 }
 
@@ -670,13 +688,6 @@ label[for="billing:use_for_shipping_no"] {
 
 }
 
-@media only screen and (max-width: 473px){
-#discount-coupon-form .input-text {
-    width: 75%;
-}
-
-}
-
 @media only screen and (max-width: 480px){
 .products-grid > li {
     width: 46%;
@@ -684,6 +695,23 @@ label[for="billing:use_for_shipping_no"] {
 .products-grid > li,
 .products-grid > li:nth-child(3n) {
     margin-right: 3.7037%;
+}
+
+}
+
+@media only screen and (max-width: 479px){
+.catalogsearch-result-index .products-grid li.item {
+    width: 49% !important;
+}
+.catalogsearch-result-index .products-grid > li, .products-grid > li:nth-child(3n) {
+    margin-right: 1%;
+}
+
+}
+
+@media only screen and (max-width: 473px){
+#discount-coupon-form .input-text {
+    width: 75%;
 }
 
 }
