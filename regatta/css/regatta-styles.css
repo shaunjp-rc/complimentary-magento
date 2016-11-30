@@ -1005,13 +1005,9 @@ html .newsletter { clear: none; width: 31%; margin: 1%; border: solid 1px #d0d0d
 .form-checkbox { max-width: 18%; text-align: center; border: solid 1px #c5c5c5; padding: 1%; box-shadow: 0px 5px 2px -5px #808080; }
 input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; width: 20px !important; }
 
-
 @media only screen and (max-width: 500px) {
 .redeye-form > div { width: 100%; }
 html .redeye-form input { max-width: 100%; }
 .redeye-form button { width: 100%;  }
 
 }
-
-/*Black Friday Styles*/
-.usp-links span{    color: #333333;}
