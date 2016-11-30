@@ -46,3 +46,6 @@ label[for="billing:use_for_shipping_no"] {
 label[for="billing:use_for_shipping_no"]:after {
 	content: ' ';
 }
+h4.bannerOverlay__subTitle.bannerOverlay__subTitle--slider.bannerOverlay__subTitle--small {
+    font-size: 12px;
+}
