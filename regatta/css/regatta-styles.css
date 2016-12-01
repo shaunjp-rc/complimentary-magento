@@ -4,7 +4,7 @@
 .ms-megamenu .mb-submenu .mb-return span, .ms-megamenu .lmb-submenu .mb-return span { float: left; font-size: 20px; line-height: 12px; font-weight: bold; }
 label[for="billing\:fax"], input#billing\:fax{display:none !important;}
 #nav-44 > a {    color: #ffffff !important;    background: #c31632;}
-#narrow-by-list div dt { border-top: 1px solid #ddd; font-size: 15px; border-bottom: 1px solid #ddd; font-family: futura; font-weight: 500; text-transform:uppercase; padding:8px; letter-spacing: 2px; }
+
 
 #nav-44 > a{color: #c31632}
 .customer-account-create .buttons-set{width: 100%;margin: 10px auto;padding-top:  10px;max-width: 100%;clear:  both;}
@@ -1011,3 +1011,8 @@ html .redeye-form input { max-width: 100%; }
 .redeye-form button { width: 100%;  }
 
 }
+
+
+/* SIDEBAR ADDITIONS */
+
+#narrow-by-list dt{padding: 10px; background: #eee;}
