@@ -10,6 +10,7 @@
 #billing-new-address-form > fieldset > ul > li:nth-child(1) > div > div.field.name-prefix > label:after{content: '*';color: #df280a;}
 .product-view div.block-related .block-content ul {    width: 100% !important;}
 .products-grid .product-name, .products-list .product-name{    min-height: 50px;}
+#narrow-by-list div dt { border-top: 1px solid #ddd; font-size: 15px; border-bottom: 1px solid #ddd; font-family: futura; font-weight: 500; text-transform:uppercase; padding:8px; letter-spacing: 2px; }
 
 .products-grid .ratings {    max-width: 160px;  left: 0;    right: 0;    margin: auto;}
 .stockedSizes {    font-size: 10px;}
