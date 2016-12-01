@@ -11,7 +11,7 @@ label[for="billing\:fax"], input#billing\:fax{display:none !important;}
 .customer-account-create .customer-name-middlename .field{width: 100% !important}
 .customer-account-create .main button.button{width: 200px !important;min-width: 0 !important;float: none;clear:  both;display:  block;margin: 0 auto;background: #5AA11F !important;}
 .header-links a{color: #606060 !important}
-
+.button2.cancel-coupon { margin-left: 10px; }
 .checkout-onepage-index .buttons-set button.button,
 .cart-table .product-cart-actions .button, #co-shipping-method-form .buttons-set .button, .footer .button{background: #5AA11F !important}
 .checkout-onepage-index .top-container{max-width: 1300px; margin: 0 auto; width: 100%}
