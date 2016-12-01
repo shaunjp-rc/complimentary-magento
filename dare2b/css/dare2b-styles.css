@@ -659,6 +659,7 @@ button.button.btn-cart {}
 .cart button{box-shadow: 1px 2px 3px rgba(0,0,0,0.2)}
 .cart .button{background: #00c478  !important;}
 #discount-coupon-form .button-wrapper > button, .cart .giftcard .button-wrapper > button{background: #333 !important}
+.button2.cancel-coupon { margin-left: 10px; }
 .paypal-or{display: none !important}
 .cart #prod-del-methods{border: 1px solid #ddd; padding: 10px; border-radius: 4px; box-shadow: 1px 2px 3px rgba(0,0,0,0.1)}
 .cart .page-title{margin: 0;}
