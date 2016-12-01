@@ -2887,4 +2887,14 @@ body{
 
 }
 
+/* Christmas nav*/
+.mst .navbar .nav > li:nth-child(7) > a:focus,
+.mst .navbar .nav > li.open:nth-child(7) > a,
+.mst .navbar .nav > li.open.active:nth-child(7) > a,
+.mst .navbar .nav > li:nth-child(7) > a:hover,
+.mst .navbar .nav > li.active:nth-child(7) > a {
+    border-color: #D83E3E;
+}
+/* Christmas nav end*/
+
 /* Christmas Micro Site END */
