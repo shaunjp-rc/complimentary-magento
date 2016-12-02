@@ -2959,7 +2959,7 @@ body{
 
 /* Christmas Homepage END */
 
-.sliderstrip__desktop--mobile {
+/*.sliderstrip__desktop--mobile {
     display: none;
 }
 .flex-active-slide .sliderstrip__desktop.sliderstrip__desktop--mobile {
@@ -2973,4 +2973,4 @@ body{
     height: auto;
 }
 
-}
+}*/
