@@ -2898,3 +2898,77 @@ body{
 /* Christmas nav end*/
 
 /* Christmas Micro Site END */
+
+/* Christmas Homepage */
+.sectionheader--christmas {
+    margin-top: -3.5%;
+    margin-bottom: 0%;
+    background: url(//dm5gggopeleel.cloudfront.net/images/AW16/Christmas+Microsite/Foliage-left.png), url(//dm5gggopeleel.cloudfront.net/images/AW16/Christmas+Microsite/Foliage-right.png);
+    background-repeat: no-repeat;
+    background-position: 17% 0px, 82% 0px;
+    padding: 2% 0;
+    background-size: 16%;
+}
+.transparentfullwidth--bluechristmas{
+  background:#ecf0f9;
+  margin-top: 1%;
+}
+.transparentfullwidth--red{
+  background-color: #d64846;
+}
+.sliderbutton--christmas{
+  width: 17%;
+    min-width: 315px;
+}
+.sliderbutton--footwear{
+  min-width: 176px;
+}
+.slidersubtext--christmasred{
+  color:#d7493b;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.sliderstrip__desktop--christmasdark,
+.sliderstrip__desktop--mobiledark{
+  background-color: #537287;
+}
+.sliderstrip__desktop--christmaslight,
+.sliderstrip__desktop--mobilelight{
+  background-color: #84a7cf;
+}
+.slidersubtext--christmaslight{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.sliderheader {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+}
+.fourblocks__button--womens {
+    background: #d64846;
+}
+
+@media only screen and (max-width: 950px){
+.sectionheader--christmas {
+    background: transparent;
+    margin-bottom: 0;
+}
+
+}
+
+/* Christmas Homepage END */
+
+.sliderstrip__desktop--mobile {
+    display: none;
+}
+.flex-active-slide .sliderstrip__desktop.sliderstrip__desktop--mobile {
+    display: none;
+}
+@media only screen and (max-width: 768px){
+.flex-active-slide .sliderstrip__desktop--mobile {
+    display: block !important;
+}
+.sliderfullwidth__container {
+    height: auto;
+}
+
+}
