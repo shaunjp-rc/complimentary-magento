@@ -2919,7 +2919,6 @@ body{
 .sliderbutton--christmas{
   width: 17%;
   min-width: 315px;
-  margin-top: 9%;
 }
 .sliderbutton--footwear{
   min-width: 176px;
@@ -2947,7 +2946,9 @@ body{
 .fourblocks__button--womens {
     background: #d64846;
 }
-
+.sliderheader--chirstmas{
+  margin-top: 9%;
+}
 @media only screen and (max-width: 950px){
 .sectionheader--christmas {
     background: transparent;
