@@ -368,7 +368,7 @@ p.collectionhighlights__hoverstate--header {
 
     .hhFooter img {
         display: inline;
-        float: none;
+        float: none !important;
     }
 
     .hhFooter__socialIcon {
@@ -389,6 +389,22 @@ p.collectionhighlights__hoverstate--header {
         clear: both;
         float: none;
     }
+
+    .hhFooter__column:last-child {
+        text-align: center;
+    }
+}
+
+.header-minicart .subtotal .label,
+a, 
+a:link, 
+a:visited, 
+a:active {
+    color: #000;
+}
+
+.header-minicart .minicart-actions .checkout-button {
+    color: #fff;
 }
 
 
