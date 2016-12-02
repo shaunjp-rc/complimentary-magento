@@ -1,7 +1,37 @@
 /* Hawkshead New Theme Override Styles */
 
+.logo {
+    background: url('//dm5gggopeleel.cloudfront.net/images/AW16/hawkheads_logoNew.png') no-repeat;
+    background-size: 100%;
+}
+
+.logo img {
+    display: none !important;
+}
+
+@media only screen and (min-width: 771px) {
+
+    .logo {
+        max-width: 266px;
+        min-height: 65px;
+        margin-bottom: 2%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    a.logo {
+        width: 30%;
+        min-width: 130px;
+    }
+}
+
 .genderheader {
     width: 95.4%;
+}
+
+.mmcontainer {
+    padding-bottom: 3%;
 }
 
 .mmimage {
@@ -12,6 +42,7 @@
 
 .flexslider {
     position: relative;
+    float: left;
 }
 
 .flexslider,
@@ -32,11 +63,13 @@
 .sliderfullwidth__container {
     display: table-cell !important;
     vertical-align: bottom;
-    height: 100%;
+    top: auto;
+    bottom: 0;
+    margin-bottom: 4%;
 }
 
 p.sliderheader {
-    margin: 8% 0 2%;
+    margin: 0 0 2%;
 }
 
 .sliderstrip__desktop {
@@ -57,7 +90,7 @@ ul.flex-direction-nav {
     z-index: 100;
     width: 100%;
     height: 63px;
-    top: 0;
+    bottom: -10%;
 }
 
 .flex-direction-nav li a {
@@ -66,13 +99,13 @@ ul.flex-direction-nav {
     position: absolute;
     cursor: pointer;
     text-indent: -9999px;
-    top: calc(14.6vw + 63px);
+    top: -6.6vw;
 }
 
 .flex-direction-nav li a.flex-prev {
     background-position: 0 0;
     left: 3%;
-    background: url(https://s3-eu-west-1.amazonaws.com/hawkshead-static-images-live/images/SS16/Sliders/Assets/sliders+arrows-11.png);
+    background: url(//dm5gggopeleel.cloudfront.net/images/SS16/Sliders/Assets/sliders+arrows-11.png);
     height: 63px;
     width: 45px;
 }
@@ -80,7 +113,7 @@ ul.flex-direction-nav {
 .flex-direction-nav li a.flex-next {
     background-position: 0;
     right: 3%;
-    background: url(https://s3-eu-west-1.amazonaws.com/hawkshead-static-images-live/images/SS16/Sliders/Assets/sliders+arrows-12.png);
+    background: url(//dm5gggopeleel.cloudfront.net/images/SS16/Sliders/Assets/sliders+arrows-12.png);
     height: 63px;
     width: 45px;
 }
@@ -96,10 +129,6 @@ ul.flex-direction-nav {
 
     .slidersubtext {
         font-size: 18px;
-    }
-
-    .flex-direction-nav li a {
-        top: calc(14.6vw + 54px);
     }
 }
 
@@ -160,8 +189,11 @@ p.collectionhighlights__hoverstate--header {
         margin-right: 0;
     }
 
+    .sliderfullwidth__container {
+        margin-bottom: 24%;
+    }
+
     p.sliderheader {
-        margin-top: 28%;
         font-size: 5vw;
     }
 
@@ -180,16 +212,16 @@ p.collectionhighlights__hoverstate--header {
     .threeblocks__communitytablet--button {
         width: 66%;
     }
+
+    .flex-direction-nav {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 660px) {
 
     .flex-direction-nav {
         display: none;
-    }
-
-    p.sliderheader {
-        margin-top: 20%;
     }
 
     .sliderheader,
@@ -199,6 +231,13 @@ p.collectionhighlights__hoverstate--header {
 }
 
 @media screen and (max-width: 550px) {
+
+    .sliderfullwidth__container {
+        top: 0;
+        bottom: auto;
+        margin-top: 18%;
+        margin-bottom: 0;
+    }
 
     .sectionheader {
         margin: 3% 0 !important;
@@ -224,7 +263,6 @@ p.collectionhighlights__hoverstate--header {
 @media screen and (max-width: 545px) {
 
     p.sliderheader {
-        margin-top: 10%;
         font-size: 6vw;
     }
 

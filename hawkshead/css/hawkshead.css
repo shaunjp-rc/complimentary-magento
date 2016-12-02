@@ -777,16 +777,16 @@ div[class*="webforms-fields-ex_data_export"] {
 }
 
 .no-cssfilters-magic .mz-thumb {
-	background: none;
+  background: none;
 }
 
 .no-cssfilters-magic .mz-thumb-selected img {
-	opacity: 1;
-	filter: none;
+  opacity: 1;
+  filter: none;
 }
 
 .mz-thumb img {
-	box-shadow: none;
+  box-shadow: none;
 }
 
 /* thumbnails */
@@ -1292,7 +1292,6 @@ Everything is prefixed with an additional selector of .product-shop to avoid any
     transform: rotate(90deg);
     padding-top: 0 !important;
   }
-
   .mcs-item {
     -moz-transform: rotate(-90deg) translateX(0px) translateY(400%);
     -webkit-transform: rotate(-90deg) translateX(0px) translateY(400%);
@@ -2972,5 +2971,4 @@ body{
 .sliderfullwidth__container {
     height: auto;
 }
-
 }*/
