@@ -77,6 +77,12 @@
     box-sizing: inherit;
 }
 
+.uspBanners__container {
+    float: left;
+    margin: 1% 0;
+    width: 100%;
+}
+
 .uspBanners__banner {
     display: block;
     width: 32%;
@@ -96,6 +102,10 @@
 }
 
 @media screen and (min-width: 1260px) {
+
+    .uspBanners {
+        width: 100%;
+    }
 
     a.uspBanners__banner {
         font-size: 16px;
@@ -407,6 +417,10 @@ p.collectionhighlights__hoverstate--header {
     }
 }
 
+.transparentfullwidth--top {
+    margin-bottom: 2%;
+}
+
 /* Footer */
 
 .footer {
@@ -529,6 +543,13 @@ p.collectionhighlights__hoverstate--header {
 
 }
 
+@media screen and (min-width: 681px) and (max-width: 960px) {
+
+    .hhFooter__column--four:nth-child(2) {
+        text-align: right
+    }
+}
+
 @media screen and (max-width: 680px) {
 
     .hhFooter {
@@ -601,6 +622,14 @@ a:active {
 
 #narrow-by-list dd {
     margin-left: 2%;
+}
+
+.opc .input-box input.input-text {
+    padding: 4px 8px !important;
+}
+
+.product-view .video {
+    display: none;
 }
 
 
@@ -865,6 +894,10 @@ p.paypal-logo {
     float: none;
     margin: 0 auto;
 }
+.checkout-cart-index p.paypal-logo {
+    float: right;
+    margin: 0;
+}
 ul.checkout-types li {
     width: 100%;
 }
@@ -939,7 +972,7 @@ ul.checkout-types li {
 .helpactivelink {color:#000000 !important;}
 
 .std{
-    width:100%;
+    width:96%;
     float:left;
 }
 .helppage,
@@ -1024,9 +1057,7 @@ p.old-price {
 p.special-price {
     margin-top:1%;
 }
-.product-view .add-to-cart .qty-wrapper .plusandminus {
-    width: 100%;
-}
+
 .product-shop .product-options {
     margin-bottom: 10px;
 }
@@ -1262,6 +1293,10 @@ label[for="billing:use_for_shipping_no"] {
 @media only screen and (max-width: 405px){
 label[for="billing:use_for_shipping_no"] {
     background-position: 102px 22px;
+}
+
+.product-options-bottom .qty-wrapper label {
+    display: none;
 }
 
 }
