@@ -55,6 +55,18 @@
     float: none;
 }
 
+@media screen and (max-width: 770px) {
+    
+    .ms-megamenu .mb-label {
+        padding: 10px 24px 10px 100%;
+        background: transparent;
+    }
+
+    .hhcolumn, .othercontainer, .gendercontainer {
+        width: 99%;
+    }
+}
+
 @media screen and (min-width: 771px) {
 
     #header-search {
@@ -222,6 +234,10 @@ p.sliderheader {
 
     .sliderstrip__desktop {
         margin: 0;
+    }
+
+    .catalog-category-view .bannercontainer {
+        display: none;
     }
 }
 
@@ -402,6 +418,10 @@ p.collectionhighlights__hoverstate--header {
     }
 
     .sectionheader--orange {
+        display: none;
+    }
+
+    .catalog-category-view .pageintro {
         display: none;
     }
 }
@@ -616,6 +636,11 @@ a:active {
 
 .cms-page-view .std {
     padding: 2%;
+}
+
+.breadcrumbs {
+    margin-bottom: 2%;
+    padding-left: 1%;
 }
 
 .cms-page-view .breadcrumbs {
