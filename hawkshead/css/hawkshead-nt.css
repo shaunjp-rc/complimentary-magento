@@ -969,6 +969,9 @@ div#googleMap {
 .catalogsearch-result-index .products-grid li.item {
     width: 49%!important;
 }
+.products-grid > li:nth-child(odd) {
+    margin-right: 3.7037%;
+}
 
 }
 
