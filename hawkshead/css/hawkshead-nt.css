@@ -1049,6 +1049,13 @@ ul.checkout-types li {
 p.regattasubheading {
     margin-bottom: 1%;
 }
+.bannercontainer.mens{
+    background-repeat: no-repeat;
+}
+.main-container{
+    clear:both;
+}
+
 
 
 
@@ -1193,6 +1200,9 @@ div#googleMap {
 .catalogsearch-result-index .products-grid li.item {
     width: 49%!important;
 }
+.products-grid > li:nth-child(odd) {
+    margin-right: 3.7037%;
+}
 
 }
 
@@ -1224,6 +1234,13 @@ td.product-cart-price:before{
 
 @media screen and (max-width: 623px) {
 .helpmenulinks h2 { font-size: 15px;   margin-bottom: 0;   margin-top: 5px;}
+}
+
+@media only screen and (max-width: 600px){
+.cart-table tr td:nth-child(2) {
+    width: 74%;
+}
+
 }
 
 @media screen and (max-width: 512px) {
