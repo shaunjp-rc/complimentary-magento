@@ -3809,29 +3809,34 @@ div.form__container div.webforms-success-text {
 /* Do not use xmas- prefix classes anywhere other than Xmas Microsite pages */
 /* Refactor/rename if layout/style is needed again */
 
-.cms-christmas .main {
+.cms-christmas .main,
+.cms-weihnachten .main {
 	background-image: url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/xmas/SnowflakeTop_1300x744px.png'),
 					url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/xmas/SnowflakeLower_1300x744px.png');
 	background-repeat: no-repeat, no-repeat;
 	background-position: top left, bottom right;
 }
 
-.cms-christmas .breadcrumbs {
+.cms-christmas .breadcrumbs,
+.cms-weihnachten .breadcrumbs {
     display: none;
 }
 
-.cms-christmas .main-container {
+.cms-christmas .main-container,
+.cms-weihnachten .main-container {
     max-width: 100%;
 }
 
-.cms-christmas .col-main {
+.cms-christmas .col-main,
+.cms-weihnachten .col-main {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'montserratregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.cms-christmas .col-main * {
+.cms-christmas .col-main *,
+.cms-weihnachten .col-main * {
     -moz-box-sizing: inherit;
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
