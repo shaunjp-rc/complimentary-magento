@@ -664,6 +664,18 @@ a:active {
     display: none;
 }
 
+.advancedreviews-summary-block,
+#advancereviews-sort-reviews,
+#advancereviews-pager-reviews,
+#advancereviews-pager-reviews-footer,
+#advancereviews-filteredReviews table {
+    display: none;
+}
+
+.box-related .item {
+    width: 15% !important;
+}
+
 
 
 .block-layered-nav--no-filters .block-title {
