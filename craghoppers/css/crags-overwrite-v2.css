@@ -3895,7 +3895,7 @@ div.form__container div.webforms-success-text {
 /* end sidebar */
 
 .xmas-hero {
-    background: url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/xmas/LeadImage_1370x548px.jpg') no-repeat center bottom;
+    background: url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/xmas/LeadImage_1370x548px_2.jpg') no-repeat center bottom;
     background-size: cover;
     height: 548px;
     position: relative;
@@ -3905,14 +3905,14 @@ div.form__container div.webforms-success-text {
 }
 
 .touch .xmas-hero {
-	background: url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/xmas/LeadImage_1370x548px.jpg') no-repeat center 50px;
+	background: url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/xmas/LeadImage_1370x548px_2.jpg') no-repeat center 50px;
 }
 
 @media screen and (max-width: 670px) {
 
 	.xmas-hero,
 	.touch .xmas-hero {
-		background: url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/xmas/MobileLeadImage_670x440px.jpg') no-repeat center 50px;
+		background: url('//d1khwdv4lze0nb.cloudfront.net/images/AW16/xmas/LeadImageMob_670x440px_2.jpg') no-repeat center 50px;
 	}
 }
 
