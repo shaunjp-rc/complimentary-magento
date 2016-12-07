@@ -38,6 +38,10 @@
     width: 95.4%;
 }
 
+.page-header {
+    padding-bottom: 0;
+}
+
 .phead {
     line-height: 1.6 !important;
     margin-top: 12px;
