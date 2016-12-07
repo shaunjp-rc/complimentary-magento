@@ -38,6 +38,10 @@
     width: 95.4%;
 }
 
+.page-header {
+    padding-bottom: 0;
+}
+
 .phead {
     line-height: 1.6 !important;
     margin-top: 12px;
@@ -184,7 +188,7 @@
      }
 
      .uspBanners__banner:nth-child(2) {
-        margin: 6px 0;
+        margin: 0;
      }
 
      .uspBanners__banner:last-child {
@@ -448,6 +452,14 @@ p.collectionhighlights__hoverstate--header {
     margin-bottom: 2%;
 }
 
+.transparentfullwidth--bluechristmas {
+    padding-bottom: 2%;
+}
+
+.transparentfullwidth--red {
+    margin-top: 0;
+}
+
 /* Footer */
 
 .footer {
@@ -540,12 +552,21 @@ p.collectionhighlights__hoverstate--header {
     }
 }
 
-@media screen and (max-width: 960px) {
+
+@media screen and (min-width: 681px) and (max-width: 960px) {
 
     .hhFooter__column {
         display: block;
         float: left;
-        width: 48%;
+        width: 42%;
+    }
+
+    .hhFooter__column:nth-child(odd) {
+        padding-left: 12%;
+    }
+
+    .hhFooter__column:nth-child(even) {
+        padding-right: 0;
     }
 
     .hhFooter__collectPlusImage {
@@ -568,13 +589,16 @@ p.collectionhighlights__hoverstate--header {
         padding-top: 4%;
     }
 
-}
-
-@media screen and (min-width: 681px) and (max-width: 960px) {
-
-    .hhFooter__column--four:nth-child(2) {
-        text-align: right
+    .hhFooter__column:last-child {
+        text-align: left;
     }
+
+    .hhFooter__column:last-child img,
+    .hhFooter__socialIcon,
+    .hhFooter__copyright {
+        float: left;
+    }
+
 }
 
 @media screen and (max-width: 680px) {
@@ -584,6 +608,7 @@ p.collectionhighlights__hoverstate--header {
     }
 
     .hhFooter__column {
+        display: block;
         width: 96%;
         padding: 2%;
         text-align: center;
@@ -674,6 +699,11 @@ a:active {
 
 .box-related .item {
     width: 15% !important;
+}
+
+.product-shop .sizeGuideButton {
+    float: left;
+    margin-left: 2%;
 }
 
 
@@ -1212,6 +1242,15 @@ dd.tab-container.current {
 }
 .customer-account-login .col-2.registered-users {
     width:100%;
+}
+
+.sidebar .block.block-layered-nav .block-title {
+    background: #84a7cf;
+    color: #fff;
+}
+
+.block-title strong {
+    color: #fff;
 }
 
 }
