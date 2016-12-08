@@ -725,6 +725,16 @@ a:active {
     margin-left: 2%;
 }
 
+.mz-thumb-selected img,
+.mz-thumb:hover {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+}
+
+.no-cssfilters-magic .mz-thumb {
+    background: transparent;
+}
+
 
 .block-layered-nav--no-filters .block-title {
     display: block;
@@ -1074,6 +1084,22 @@ ul.checkout-types li {
 .catalogsearch-result-index .products-grid > li {
     width: 24%;
     margin-right: 1%;
+}
+
+.catalogsearch-result-index .col-left-first,
+.catalogsearch-result-index .col-right.sidebar {
+    display: none;
+}
+
+.search-autocomplete ul li.selected {
+    background-color: #eee;
+    color: #666 !important;
+}
+.search-autocomplete ul.bubble-elasticsearch li.selected a {
+    color: #000;
+}
+#search_autocomplete .price {
+    display: none;
 }
 .cms-cataloguerequest h1 {
     font-family: 'poppinsbold', 'Helvetica Neue', Helvetica, 'Arial Black', Arial, sans-serif;
