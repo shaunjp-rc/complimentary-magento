@@ -1530,18 +1530,17 @@ p.regattasubheading {
 /* Christmas Homepage END */
 
 .bannercontainer .mens{
-    background-image: url('//dm5gggopeleel.cloudfront.net/images/AW16/resized/MensResize_1260x180px.jpg');
+    background-image: url(//dm5gggopeleel.cloudfront.net/images/AW16/resized/MensResize_1260x180px.jpg);
     background-repeat: no-repeat;
 }
 .bannercontainer .womens{
-    background-image: url('//dm5gggopeleel.cloudfront.net/images/AW16/resized/WomensResize_1260x180px.jpg');
+    background-image: url(//dm5gggopeleel.cloudfront.net/images/AW16/resized/WomensResize_1260x180px.jpg);
     background-repeat: no-repeat;
 }
 .bannercontainer .kids{
-    background-image: url('//dm5gggopeleel.cloudfront.net/images/AW16/resized/KidsResize_1260x180px.jpg');
+    background-image: url(//dm5gggopeleel.cloudfront.net/images/AW16/resized/KidsResize_1260x180px.jpg);
     background-repeat: no-repeat;
 }
-
 
 @media only screen and (max-width: 1100px){
 p.old-price {
