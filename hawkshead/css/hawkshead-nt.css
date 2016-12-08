@@ -1603,6 +1603,10 @@ ul.list-select {
 .catRequestLeft .buttons-set p.required {
     margin-left: 0;
 }
+.catRequestLeft .webforms-fields-ex_internal_email_restrict p.webforms-fields-comment,
+.catRequestLeft .webforms-fields-ex_external_email_restrict p.webforms-fields-comment{
+    display: block;
+}
 
 
 
