@@ -1529,15 +1529,15 @@ p.regattasubheading {
 
 /* Christmas Homepage END */
 
-.bannercontainer .mens{
+.bannercontainer.mens{
     background-image: url(//dm5gggopeleel.cloudfront.net/images/AW16/resized/MensResize_1260x180px.jpg);
     background-repeat: no-repeat;
 }
-.bannercontainer .womens{
+.bannercontainer.womens{
     background-image: url(//dm5gggopeleel.cloudfront.net/images/AW16/resized/WomensResize_1260x180px.jpg);
     background-repeat: no-repeat;
 }
-.bannercontainer .kids{
+.bannercontainer.kids{
     background-image: url(//dm5gggopeleel.cloudfront.net/images/AW16/resized/KidsResize_1260x180px.jpg);
     background-repeat: no-repeat;
 }
