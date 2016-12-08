@@ -7,17 +7,6 @@
 
 $j(document).ready(function($) {
 
-  //Nasty hack to make AJAX cart work
-
-  if ($j(AmAjaxObj).length) {
-
-    $j('.btn-cart').on('click', function(){
-
-      $j(this).removeAttr('onclick');
-      
-    });
-  }
-
 
   $j('.block-title').click(function() {
     $j('#narrow-by-list').toggleClass('no-display');
