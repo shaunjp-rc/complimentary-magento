@@ -1753,13 +1753,12 @@ dd.tab-container.current {
 }
 
 @media only screen and (max-width: 768px){
-.slides li .sliderstrip__desktop--mobile {
-    display: none !important;
-}
-.slides li.flex-active-slide .sliderstrip__desktop--mobile {
-    display: block !important;
-}
-
+    .slides li .sliderstrip__desktop--mobile {
+        display: none !important;
+    }
+    .slides li.flex-active-slide .sliderstrip__desktop--mobile {
+        display: block !important;
+    }
 }
 
 @media only screen and (max-width: 767px){
