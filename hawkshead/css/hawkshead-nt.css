@@ -1581,7 +1581,6 @@ ul.list-select {
 .emailsignupform .buttons-set p.required {
     margin-left: 0;
 }
-
 .catRequestLeft {
     width: 100%;
 }
@@ -1606,6 +1605,9 @@ ul.list-select {
 .catRequestLeft .webforms-fields-ex_internal_email_restrict p.webforms-fields-comment,
 .catRequestLeft .webforms-fields-ex_external_email_restrict p.webforms-fields-comment{
     display: block;
+}
+li.wide {
+    clear: both;
 }
 
 
