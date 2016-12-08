@@ -1541,6 +1541,23 @@ p.regattasubheading {
     background-image: url(//dm5gggopeleel.cloudfront.net/images/AW16/resized/KidsResize_1260x180px.jpg);
     background-repeat: no-repeat;
 }
+.bannercontainer.footwear {
+    background-image: url(//dm5gggopeleel.cloudfront.net/images/AW16/resized/FootwearResize_1260x180px.jpg);
+}
+.bannercontainer.brands {
+    background-image: url(//dm5gggopeleel.cloudfront.net/images/AW16/resized/BrandsResize_1260x180px.jpg);
+}
+.bannercontainer.coastal {
+    background-image: url(//dm5gggopeleel.cloudfront.net/images/AW16/resized/Coastal_1260x180px.jpg);
+}
+.bannercontainer.city {
+    background-image: url(//dm5gggopeleel.cloudfront.net/images/AW16/resized/CityBreak_1260x180px.jpg);
+}
+.bannercontainer.country {
+    background-image: url(//dm5gggopeleel.cloudfront.net/images/AW16/resized/Country_1260x180px.jpg);
+}
+
+
 
 @media only screen and (max-width: 1100px){
 p.old-price {
