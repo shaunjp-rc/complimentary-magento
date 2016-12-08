@@ -726,13 +726,20 @@ a:active {
 }
 
 .mz-thumb-selected img,
-.mz-thumb:hover {
+.mz-thumb:hover,
+.mz-thumb:hover:not(.mz-thumb-selected) img,
+.mz-expand-thumbnails .magic-thumb:not(.magic-thumb-selected) > img:hover,
+.mz-expand-thumbnails .magic-thumb-selected img {
     -webkit-filter: brightness(100%);
     filter: brightness(100%);
 }
 
 .no-cssfilters-magic .mz-thumb {
     background: transparent;
+}
+
+.upsellsContainer {
+    width: 100%;
 }
 
 
