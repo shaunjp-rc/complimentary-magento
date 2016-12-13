@@ -1925,3 +1925,7 @@ label[for="billing:use_for_shipping_no"] {
 }
 
 }
+
+.form-list li:nth-child(3) label:after {
+    content: ', or select a store for pickup';
+}
