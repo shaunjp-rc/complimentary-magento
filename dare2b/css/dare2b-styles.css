@@ -977,7 +977,7 @@ dl::-webkit-scrollbar-thumb {
 
 
 .product-view{position:relative}
-div.MagicToolboxSelectorsContainer{position:absolute; left: -94px; top: 0; width: 86px !important; padding: 10px; background: #fff; border: 1px solid #ddd; border-radius: 4px; max-height: 300px; overflow: auto;}
+div.MagicToolboxSelectorsContainer{position:absolute;left: -94px;top: 0;width: 86px !important;padding: 10px;background: #fff;border: 1px solid #ddd;border-radius: 4px;max-height: 300px;overflow: hidden;}
 .mcs-item > a, .MagicScroll-horizontal .mcs-items-container{}
 .mcs-item > a, .MagicScroll-horizontal .mcs-items-container > .mcs-item{float: none; display: block;}
 .mcs-items-container{transform: none !important}
