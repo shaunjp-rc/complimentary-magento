@@ -974,3 +974,4 @@ html .redeye-form input { max-width: 100%; }
 .redeye-form button { width: 100%;  }
 
 }
+.header-contact .number:after { content: "MON - FRI 8AM - 8PM | Sat - Sun - 10am - 4pm"; font-size: 11px; color: #aaa; display: block; text-align: right; height: 14px; margin-right: 2px; margin-top: -7px; }
