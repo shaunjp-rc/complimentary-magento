@@ -4895,3 +4895,11 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 .flex-direction-nav {
     height: 0;
 }
+
+/* style for showing quick buy on outlet, online exclusives and accessories */
+.catalog-category-view.categorypath-outlet .quickbuy,
+.catalog-category-view.categorypath-accessories .quickbuy,
+.catalog-category-view.categorypath-online-exclusives .quickbuy {
+    display: block !important;
+}
+/* END */
