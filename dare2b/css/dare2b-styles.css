@@ -1084,3 +1084,19 @@ input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0
 html .redeye-form input { max-width: 100%; }
 .redeye-form button { width: 100%;  }
 }
+
+/*Checkout Page - Saving styles*/
+.product-cart-total .cart-price .price { display: block; }
+.product-cart-total .cart-price .save { display: block; color: red;    font-size: 14px; }
+.product-cart-total .cart-price .rule { font-size:14px; }
+.product-cart-total .cart-price .save > span{display: inline-block;     margin-left: 5px;}
+.product-cart-total > span > span.save > br{display:none;}
+.display-single-price .shippingsaving { margin: auto; display: table; border: solid 1px red; padding: 1% 10%; }
+.display-single-price .shippingsaving .top{display: block; color: red;}
+.display-single-price .shippingsaving .middle{font-size: 25px; display: block; text-align: center;color: red; font-weight: bold;}
+.display-single-price .shippingsaving .bottom{margin: auto; display: table; color: red;}
+#shopping-cart-totals-table > tfoot > tr > td:nth-child(1) > strong{    text-decoration: underline;}
+.button2.cancel-coupon { margin-left: 10px; }
+@media only screen and (max-width: 600px) {
+.product-cart-total{display:block !important;   text-align: left !important;}
+}
