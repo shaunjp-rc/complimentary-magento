@@ -1929,3 +1929,8 @@ label[for="billing:use_for_shipping_no"] {
 #checkout-step-billing .form-list li:nth-child(3) label[for="billing:use_for_shipping_yes"]:after {
     content: ', or select a store for pickup';
 }
+
+.checkout-cart-index #shopping-cart-table .save,
+.checkout-cart-index .shippingsaving {
+    display: none;
+}
