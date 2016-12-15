@@ -314,32 +314,6 @@ $j(document).ready(function($) {
   }
 
 
-  //LeftHand Nav Hide/Show - uncomment if Montetate experiment wins and its needed permanently
-
-  // if ($j('#narrow-by-list').length) {
-
-  //   $j('#narrow-by-list ol').each(function(){
-  //     var numberOfSolrItems = $j(this).children().length;
-
-  //     if (numberOfSolrItems > 5) {
-  //       $j(this).children('li:nth-child(n+6)').css('display', 'none');
-  //       $j(this).append('<p class="lhn-show-more-less"><a class="lhn-show-more-link">Show more +</a><a class="lhn-show-less-link">Show less -</a></p>');
-
-  //       $j('.lhn-show-more-link').on('click', function(){
-  //         $j(this).closest('ol').children('li:nth-child(n+6)').fadeIn(400);
-  //         $j(this).css('display', 'none');
-  //         $j(this).next('.lhn-show-less-link').css('display', 'block');
-  //       });
-
-  //       $j('.lhn-show-less-link').on('click', function(){
-  //         $j(this).closest('ol').children('li:nth-child(n+6)').fadeOut(400);
-  //         $j(this).css('display', 'none');
-  //         $j(this).prev('.lhn-show-more-link').css('display', 'block');
-  //       });
-  //     }
-  //   });  
-  // }
-
   $j('.productPageTechnologies, .amshopby-link script').remove();
 
 
@@ -384,5 +358,18 @@ $j(document).ready(function($) {
       }
     });  
   }
+
+  // Welcome Back Basket Message
+
+  var numInBasket = $j('.header-minicart .count').text();
+
+  if (numInBasket != 0) {
+    console.log('dave - ' + numInBasket);
+
+    var welcomeBackBasketBox = $j('<div class="welcomeBackBasketBox"><h3>Welcome Back</h3><p>Last time you were here you added ' + numInBasket + ' items to your basket.</p></div>');
+    $j('body').append(welcomeBackBasketBox);
+  }
+
+
 
 });
