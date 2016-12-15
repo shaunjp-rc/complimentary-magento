@@ -146,12 +146,6 @@ jQuery(window).load(function(){
   jQuery("#narrow-by-list dd:first-of-type").after(jQuery(".sidebar .actions").clone());
   jQuery(".sidebar .actions a").text("Remove all Filters");
 
-  // RRP TEXT CHANGE
-
-  if(jQuery(".old-price .price-label").length > 0){
-    jQuery(".old-price .price-label").text("RRP");
-  }
-
   liResize();
 
   // FOOTER SIGNUP
