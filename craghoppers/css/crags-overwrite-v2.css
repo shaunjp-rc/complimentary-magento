@@ -4909,11 +4909,14 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 
 .welcomeBackBasketBox {
 	position: absolute;
-	top: 1%;
+	top: 42px;
 	right: 0;
 	background: #fff;
 	padding: 1% 2%;
 	border-left: 3px #666 solid;
 	border-top: 1px #666 solid;
 	border-bottom: 1px #666 solid;
+	z-index: 200;
 }
+
+

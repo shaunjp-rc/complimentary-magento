@@ -366,8 +366,12 @@ $j(document).ready(function($) {
   if (numInBasket != 0) {
     console.log('dave - ' + numInBasket);
 
-    var welcomeBackBasketBox = $j('<div class="welcomeBackBasketBox"><h3>Welcome Back</h3><p>Last time you were here you added ' + numInBasket + ' items to your basket.</p></div>');
+    var welcomeBackBasketBox = $j('<div class="welcomeBackBasketBox"><h3>Welcome Back</h3><p>Last time you were here you added ' + numInBasket + ' items to your basket:</p><div class="welcomeBackBasketBox__items"></div></div>');
+    var wbBasketItems = $j('.mini-products-list li').find('img, .product-name');
+    console.log(wbBasketItems);
     $j('body').append(welcomeBackBasketBox);
+
+    wbBasketItems.clone().appendTo('.welcomeBackBasketBox__items');
   }
 
 
