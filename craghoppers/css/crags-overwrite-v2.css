@@ -4907,16 +4907,71 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 
 /* Welcome Back Basket Message */
 
-.welcomeBackBasketBox {
+#welcomeBackBasketBox {
 	position: absolute;
 	top: 42px;
-	right: 0;
+	right: -100%;
 	background: #fff;
 	padding: 1% 2%;
-	border-left: 3px #666 solid;
-	border-top: 1px #666 solid;
-	border-bottom: 1px #666 solid;
+	border-left: 4px #333 solid;
+	border-top: 1px #333 solid;
+	border-bottom: 1px #333 solid;
 	z-index: 200;
+	max-width: 33%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
+#welcomeBackBasketBox * {
+	-moz-box-sizing: inherit;
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+}
 
+#welcomeBackBasketBox h3 span {
+	display: inline-block;
+	position: relative;
+	float: right;
+	font-family: 'montserratregular';
+	padding: 6px;
+	top: -6px;
+}
+
+#welcomeBackBasketBox h3 span:hover {
+	cursor: pointer;
+}
+
+.welcomeBackBasketBox__items {
+	margin: 12px 0;
+}
+
+.welcomeBackBasketBox img {
+	margin: 6px 12px 6px 0;
+}
+
+.welcomeBackBasketBox p {
+	margin: 0;
+}
+
+.welcomeBackBasketBox__button {
+	display: inline-block;
+	padding: 6px 0;
+	width: 48%;
+	font-family: 'montserratregular';
+	background: #ccc;
+	text-align: center;
+	margin: 12px 4% 12px 0;
+	cursor: pointer;
+}
+
+.welcomeBackBasketBox__button--basket {
+	background: #000;
+	color: #fff !important;
+	margin-right: 0;
+}
+
+.welcomeBackBasketBox__button:hover {
+	background: #4c4c4c;
+	color: #fff !important;
+}

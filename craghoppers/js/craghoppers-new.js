@@ -362,17 +362,38 @@ $j(document).ready(function($) {
   // Welcome Back Basket Message
 
   var numInBasket = $j('.header-minicart .count').text();
+  console.log(window.location.pathname);
 
-  if (numInBasket != 0) {
-    console.log('dave - ' + numInBasket);
+  if (numInBasket != 0 && window.location.pathname != "/checkout/cart/" && window.location.pathname != "/checkout/onepage/") {
 
-    var welcomeBackBasketBox = $j('<div class="welcomeBackBasketBox"><h3>Welcome Back</h3><p>Last time you were here you added ' + numInBasket + ' items to your basket:</p><div class="welcomeBackBasketBox__items"></div></div>');
-    var wbBasketItems = $j('.mini-products-list li').find('img, .product-name');
-    console.log(wbBasketItems);
-    $j('body').append(welcomeBackBasketBox);
+    var welcomeBackBasketBox = $j('<div id="welcomeBackBasketBox"><h3>Welcome Back <span class="welcomeBackBasketBox__close">X</span></h3><p>Last time you were here you added ' + numInBasket + ' items to your basket:</p><table class="welcomeBackBasketBox__items"></table><span class="welcomeBackBasketBox__button welcomeBackBasketBox__close">Continue Shopping</span><a class="welcomeBackBasketBox__button welcomeBackBasketBox__button--basket" href="http://www.craghoppers.com/checkout/cart/">Go to Basket</a></div>');
+  
+    $j('body').append(welcomeBackBasketBox);  
 
-    wbBasketItems.clone().appendTo('.welcomeBackBasketBox__items');
+    var wbBasketContents = $j('.mini-products-list li').each(function(){
+          var wbBasketImg = $j(this).find('img').clone();
+          var wbBasketTitle = $j(this).find('.product-name').clone();
+
+          var wbBasketCell1 = $j('<td class="wbc1"></td>');
+          var wbBasketCell2 = $j('<td class="wbc2"></td>');
+          var wbBasketRow = $j('<tr></tr>');
+
+          wbBasketImg.appendTo(wbBasketCell1);
+          wbBasketTitle.appendTo(wbBasketCell2);
+
+          wbBasketCell1.appendTo(wbBasketRow);
+          wbBasketCell2.appendTo(wbBasketRow);
+
+          wbBasketRow.appendTo('.welcomeBackBasketBox__items');
+        });
+
+    welcomeBackBasketBox.delay(300).animate({
+      'right': '0'
+    }, 1200);
+    
   }
+
+
 
 
 
