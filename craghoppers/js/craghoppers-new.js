@@ -205,43 +205,6 @@ $j(document).ready(function($) {
     $j("#shopping-cart-totals-table tfoot").css({"background-color": "#eff5ea", "border-left": "2px solid #11b400"});
   }
   /* END */
-
-  //Nasty hack to make AJAX cart work
-
-  try {
-
-    if ($j(AmAjaxObj).length) {
-
-      $j('.btn-cart').on('click', function(){
-
-        $j(this).removeAttr('onclick');
-        
-      });
-    }
-  }
-  catch (err) {
-    console.log('AJAX basket failed to load');
-    ga('send', 'event', 'AJAX Cart Fail', 'load', err);
-  }
-
-
-  // Homepage Slider - Swap Text for CTA's - Uncomment when needed //
-
-  // if ($j('.fullWidthSlider__slidesList--singleSlide').length && $j('html').hasClass('no-touch') && $j(window).width() > 1100) {
-  //   console.log('single slider exists');
-
-  //   $j('.fullWidthSlider__slidesList--singleSlide').hoverIntent(function(){
-
-  //     $j('.fullWidthSlider__slidesList--singleSlide .bannerOverlay__title--slider, .fullWidthSlider__slidesList--singleSlide .bannerOverlay__subTitle--slider').fadeOut(300, function(){
-  //       $j('.fullWidthSlider__slidesList--singleSlide .bannerOverlay__cta--slider').fadeIn(300).css('display', 'inline-block');
-  //     });
-      
-  //   }, function(){
-  //     $j('.fullWidthSlider__slidesList--singleSlide .bannerOverlay__cta--slider').fadeOut(300, function(){
-  //       $j('.fullWidthSlider__slidesList--singleSlide .bannerOverlay__title--slider, .fullWidthSlider__slidesList--singleSlide .bannerOverlay__subTitle--slider').fadeIn(300);
-  //     });
-  //   });
-  // }
   
 
   // Fit text tool-tip
