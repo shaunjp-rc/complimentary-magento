@@ -4917,7 +4917,7 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 	border-top: 1px #333 solid;
 	border-bottom: 1px #333 solid;
 	z-index: 200;
-	max-width: 33%;
+	max-width: 48%;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -4943,7 +4943,11 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 }
 
 .welcomeBackBasketBox__items {
-	margin: 12px 0;
+	margin: 6px 0;
+}
+
+.welcomeBackBasketBox__items td {
+	padding: 6px 0;
 }
 
 .welcomeBackBasketBox img {
@@ -4966,7 +4970,7 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 }
 
 .welcomeBackBasketBox__button--basket {
-	background: #000;
+	background: #f38230;
 	color: #fff !important;
 	margin-right: 0;
 }
@@ -4974,4 +4978,24 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 .welcomeBackBasketBox__button:hover {
 	background: #4c4c4c;
 	color: #fff !important;
+}
+
+.welcomeBackBasketBox__button--basket:hover {
+	background: #ff9C4a;
+}
+
+@media screen and (max-width: 720px) {
+
+	#welcomeBackBasketBox {
+		max-width: 64%;
+	}
+
+	.welcomeBackBasketBox__button {
+		width: 98%;
+		margin: 6px 0;
+	}
+}
+
+.feefo-ratings img {
+	width: 100%;
 }
