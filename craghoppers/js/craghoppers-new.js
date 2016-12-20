@@ -205,7 +205,7 @@ $j(document).ready(function($) {
     $j("#shopping-cart-totals-table tfoot").css({"background-color": "#eff5ea", "border-left": "2px solid #11b400"});
   }
   /* END */
-  
+
 
   // Fit text tool-tip
 
@@ -314,32 +314,6 @@ $j(document).ready(function($) {
   }
 
 
-  //LeftHand Nav Hide/Show - uncomment if Montetate experiment wins and its needed permanently
-
-  // if ($j('#narrow-by-list').length) {
-
-  //   $j('#narrow-by-list ol').each(function(){
-  //     var numberOfSolrItems = $j(this).children().length;
-
-  //     if (numberOfSolrItems > 5) {
-  //       $j(this).children('li:nth-child(n+6)').css('display', 'none');
-  //       $j(this).append('<p class="lhn-show-more-less"><a class="lhn-show-more-link">Show more +</a><a class="lhn-show-less-link">Show less -</a></p>');
-
-  //       $j('.lhn-show-more-link').on('click', function(){
-  //         $j(this).closest('ol').children('li:nth-child(n+6)').fadeIn(400);
-  //         $j(this).css('display', 'none');
-  //         $j(this).next('.lhn-show-less-link').css('display', 'block');
-  //       });
-
-  //       $j('.lhn-show-less-link').on('click', function(){
-  //         $j(this).closest('ol').children('li:nth-child(n+6)').fadeOut(400);
-  //         $j(this).css('display', 'none');
-  //         $j(this).prev('.lhn-show-more-link').css('display', 'block');
-  //       });
-  //     }
-  //   });  
-  // }
-
   $j('.productPageTechnologies, .amshopby-link script').remove();
 
 
@@ -384,5 +358,78 @@ $j(document).ready(function($) {
       }
     });  
   }
+
+
+  // Welcome Back Basket Message
+
+  //set up some variables to check value of to decide if message should show or not
+  var numInBasket = $j('.header-minicart .count').text();
+  var wbbCookie = getCookie('welcomeBackBasket');
+  var wbbReferrer = document.referrer;
+
+  //make sure message only shows if there is something in customers basket, they dont have the cookie, they haven't come from another page on site, and they arent returning directly to basket or checkout pages
+  if (numInBasket != 0 && wbbCookie != 'true' && wbbReferrer.indexOf("craghoppers.com") < 0 && window.location.pathname != "/checkout/cart/" && window.location.pathname != "/checkout/onepage/") {
+
+    //create block for message
+    var welcomeBackBasketBox = $j('<div id="welcomeBackBasketBox"><h3>Welcome Back <span class="welcomeBackBasketBox__close">X</span></h3><p>Last time you were here you added ' + numInBasket + ' items to your basket:</p><table class="welcomeBackBasketBox__items"></table><span class="welcomeBackBasketBox__extraItems"></span><span class="welcomeBackBasketBox__button welcomeBackBasketBox__close">Continue Shopping</span><a class="welcomeBackBasketBox__button welcomeBackBasketBox__button--basket" href="/checkout/cart/">Go to Basket</a></div>');
+  
+    //attach block to body on page load
+    $j('body').append(welcomeBackBasketBox);  
+
+    //scrape mini cart for product image and name and then create table cells to put them in before appending it to the table in welcomeBackBasketBox
+    var wbBasketContents = $j('.mini-products-list li:nth-child(-n+2)').each(function(){
+          var wbBasketImg = $j(this).find('img').clone();
+          var wbBasketTitle = $j(this).find('.product-name').clone();
+
+          var wbBasketCell1 = $j('<td class="wbc1"></td>');
+          var wbBasketCell2 = $j('<td class="wbc2"></td>');
+          var wbBasketRow = $j('<tr></tr>');
+
+          wbBasketImg.appendTo(wbBasketCell1);
+          wbBasketTitle.appendTo(wbBasketCell2);
+
+          wbBasketCell1.appendTo(wbBasketRow);
+          wbBasketCell2.appendTo(wbBasketRow);
+
+          wbBasketRow.appendTo('.welcomeBackBasketBox__items');
+        });
+
+    if (numInBasket > 2) {
+      var remainderInBasket = numInBasket - 2;
+      $j('<p>... along with ' + remainderInBasket + ' more items.</p>').appendTo('.welcomeBackBasketBox__extraItems');
+    }
+
+    //now message is complete slide message in from the right. On completion set a cookie and send event to GA
+    welcomeBackBasketBox.delay(300).animate({
+      'right': '0'
+    }, 1200, function(){
+      document.cookie = "welcomeBackBasket=true";
+      ga('send', 'event', 'Welcome Back Basket', 'shown');
+    });
+
+
+    //Slide message off screen and then remove it from DOM if customer clicks cross or Continue Shopping button. Send event to GA.
+    $j('.welcomeBackBasketBox__close').on('click', function(){
+
+      welcomeBackBasketBox.animate({
+        'right': '-100%'
+      }, 800, function(){
+
+        welcomeBackBasketBox.detach();
+      });
+
+      ga('send', 'event', 'Welcome Back Basket', 'closed');
+    });
+
+    //Send event to GA if customer clicks Go to Basket
+    $j('.welcomeBackBasketBox__button--basket').on('click', function(){
+      ga('send', 'event', 'Welcome Back Basket', 'Go to Basket');  
+    });
+    
+  }
+
+
+
+
 
 });
