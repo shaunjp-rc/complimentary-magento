@@ -866,7 +866,7 @@ html .cms-homepage #header-collect{display: block !important;}
 .active-menu.sale .sub-link{    color: #f9bbbb !important;}
 .active-menu.sale .sale-contents:hover .link-container.three { display: none; width: 100%; color: #ffffff; margin: 0% 0%; max-width: 100%; position: absolute; top: 9%; left: 0; padding: 2%; height: 100%; background-color: #a7182d; text-align: left;}
 .active-menu.sale .sale-contents { background: #a2162b; background-image: url(https://d3h1w1ia8q4z9t.cloudfront.net/AW16/images/Mega-Menu/sale-hover-2.jpg); }
-.toggles{width: 33.333%; float: left;}
+.active-menu .toggles { width: 33.333% !important; float: left; clear: none; }
 .toggles:nth-child(3){border-left: solid 1px #ffffff; border-right: solid 1px #ffffff;}
 .button-toggle:hover .link-container.three {display: block !important;}
 .button-toggle { color: white; text-transform: uppercase; padding: 10px; text-align: center; height: 44px; border-bottom: solid 1px #ffffff;     background: #7b0e1f;}
