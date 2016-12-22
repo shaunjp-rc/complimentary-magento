@@ -411,7 +411,7 @@ html .sub-text h1{font-size: 22px; margin-top: 0;}
 
 @media screen and (max-width: 500px){
 
-.products-grid .quickbuy + .ratings{top: -120px}
+.products-grid .quickbuy + .ratings{top: -120px;}
 .products-grid .quickbuy .button{width: 50%;right: 0;margin: 0; border-radius: 0;}
 .products-grid .quickbuy select{left: 0; border-radius: 0;}
 .products-grid .quickbuy .qty{width: 100% !important;max-width: 100%;}
@@ -1102,4 +1102,13 @@ html .redeye-form input { max-width: 100%; }
 }
 @media only screen and (max-width: 600px) {
 .product-cart-total{display:block !important;   text-align: left !important;}
+}
+
+#review-buttons-container .btn-checkout{float: right}
+
+@media screen and (max-width: 500px){
+  .products-grid .ratings .rating-box,
+  .products-grid .ratings .amount{clear: both; display: block; float: none; position: relative; height: auto; top: -10px; }
+  .products-grid .ratings .amount{margin-top: 0px; text-align: left}
+  .products-grid .quickbuy{margin-top: 30px;}
 }
