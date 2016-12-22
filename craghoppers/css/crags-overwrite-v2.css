@@ -4999,3 +4999,14 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 .feefo-ratings img {
 	width: 100%;
 }
+
+.product-view .no-rating {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+	.video.collateral-block {
+		display: none;
+	}
+}
