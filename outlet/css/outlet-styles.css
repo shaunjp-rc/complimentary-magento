@@ -145,6 +145,7 @@
   .catalog-product-view .percentOffContainer {    padding: 10px 10px;}
   .prod-size-chart { left: 0px; right: 0; }
   .category-products .limiter {    margin-top: 0px;}
+  .product-view .product-shop .product-name .h1 { font-size: 20px !important; }
 }
 
 
