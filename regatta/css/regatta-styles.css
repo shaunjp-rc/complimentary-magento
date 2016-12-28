@@ -47,6 +47,8 @@ label[for="billing\:fax"], input#billing\:fax{display:none !important;}
 @media screen and (max-width: 770px){
 .category-products > .toolbar .limiter select{height: 59px;}
 .product-view .product-shop .product-name .h1{margin: 0;}
+.catalog-product-view .delivery-info.collateral-block{height: initial;}
+.catalog-product-view .delivery-info.collateral-block h2:before{display: none;}
 
 /* Ipad to mobile filters fix*/
 .category-products > .toolbar .sorter { float: left; width: 33.333%; position: absolute; margin-left: 0px; left: 32%; }
