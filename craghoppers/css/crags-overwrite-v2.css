@@ -4898,11 +4898,16 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 
 /* style for showing quick buy on outlet, online exclusives and accessories */
 .catalog-category-view.categorypath-outlet .quickbuy,
+.catalog-category-view.categorypath-outlet-mens .quickbuy,
+.catalog-category-view.categorypath-outlet-womens .quickbuy,
+.catalog-category-view.categorypath-outlet-kids .quickbuy,
+.catalog-category-view.categorypath-outlet-accessories .quickbuy,
 .catalog-category-view.categorypath-accessories .quickbuy,
 .catalog-category-view.categorypath-online-exclusives .quickbuy {
     display: block !important;
 }
 /* END */
+
 
 
 /* Welcome Back Basket Message */
