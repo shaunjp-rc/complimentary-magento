@@ -994,7 +994,7 @@ button.mz-button.mz-button-close{top: 100px !important}
 /* Header edits */
 
 .skip-cart .count, .skip-link.skip-active .count{font-size: 12px; padding: 2px; font-weight: bold;}
-
+.successmessage{text-align: center; font-size: 30px; background: #5AA11F; color: #ffffff; padding: 20px; border-radius: 3px; box-shadow: 0px 11px 10px -10px rgba(0, 0, 0, 0.38); }
 .invalid{box-shadow: 0px 0px 5px red;}
 .popup{position: absolute;right: 0px;top: -10px;color: red;}
 .redeye-form > div { margin: 1%; float: left; width: 48%; position: relative;}
