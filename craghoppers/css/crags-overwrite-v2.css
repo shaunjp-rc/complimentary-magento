@@ -5015,3 +5015,9 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 		display: none;
 	}
 }
+
+/* Sale nav color change */
+li#nav-65 a {
+    color: #BE0000;
+}
+/* END */
