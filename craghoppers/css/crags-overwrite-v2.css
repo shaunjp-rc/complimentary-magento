@@ -5021,3 +5021,23 @@ li#nav-65 a {
     color: #BE0000;
 }
 /* END */
+
+/* Unsubscribe form styles */
+.successmessage {
+    text-align: center;
+    background: #169416;
+    color: #fff;
+    padding: 2% 0;
+    width: 50%;
+    margin: 0 auto;
+}
+.cms-unsubscribe-form label {
+    min-width: 110px;
+}
+.cms-unsubscribe-form .redeye-form div {
+    line-height: 3;
+}
+.cms-unsubscribe-form .redeye-form div.newsletter {
+    line-height: 1;
+}
+/* END */
