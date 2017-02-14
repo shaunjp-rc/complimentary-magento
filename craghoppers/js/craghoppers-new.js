@@ -1,6 +1,6 @@
 /*
-	Craghoppers UK site specific JS snippets
- */
+  Craghoppers UK site specific JS snippets
+ */ 
 
 // Check for touch device - not entirely reliable. Using in combination with screen size checks in css
 
@@ -9,7 +9,7 @@ function is_touch_device() {
 }
 
 if (is_touch_device() == true) {
-	document.getElementsByTagName( 'html' )[0].classList.add('isTouch');
+  document.getElementsByTagName( 'html' )[0].classList.add('isTouch');
 }
 
 var $j = jQuery.noConflict();
@@ -17,15 +17,15 @@ var $j = jQuery.noConflict();
 $j(document).ready(function($) {
 
 
-	// Flexslider init
-	if ($j('.flexslider').length) {
-		setTimeout(function(){
+  // Flexslider init
+  if ($j('.flexslider').length) {
+    setTimeout(function(){
           $j('.flexslider').flexslider();
         }, 500);
-	}
+  }
 
 
-	// Product Page Zoom and Scroller
+  // Product Page Zoom and Scroller
 
   if ($j('body').hasClass('catalog-product-view')) {
 
@@ -85,10 +85,10 @@ $j(document).ready(function($) {
 
   }
 
-	//Product Page Video Flag
-	if ($j('.product-collateral .video').length < 1) {
-		$j('.product-collateral .technologies-wrapper').addClass('technologies-wrapper--fullWidth');
-	}
+  //Product Page Video Flag
+  if ($j('.product-collateral .video').length < 1) {
+    $j('.product-collateral .technologies-wrapper').addClass('technologies-wrapper--fullWidth');
+  }
 
   //Product Page Social Share
   var pathname = document.URL;
@@ -429,6 +429,63 @@ $j(document).ready(function($) {
   }
 
 
+  // Lookbook Pop-up
+
+  if ($j('html').hasClass('no-touch') == true || $j(window).width() >= 768) {
+
+    $j('.lookbook__product').on('click', function(e){
+      e.preventDefault();
+      var lbProductUrl = $j(this).attr('href');
+      var lbPopup = $j('<div class="lookbook_popup product-view"><span class="lookbook_popup__close">X</span></div>');
+
+      $j('body').append(lbPopup);
+
+      var jqXHR = $j.get(lbProductUrl, function(data){
+        var lbProductDetails = $j(data).find('.product-essential');
+        $j('.lookbook_popup').append(lbProductDetails);
+      });
+
+      jqXHR.done(function(){
+        AmAjaxShoppCartLoad('.btn-cart');
+        $j('.MagicToolboxSelectorsContainer, .sharing-links').remove();
+        $j('<a class="lookbook_popup__more" href="'+ lbProductUrl +'">More Details ></a>').appendTo('.box-related');
+
+        $j('.lookbook_popup__close').on('click', function(){
+          $j('.lookbook_popup').fadeOut(300, function(){
+            $j('.lookbook_popup').remove();
+          });
+        });
+
+        $j('.btn-cart').on('click', function(){
+          $j('.lookbook_popup').delay(1000).fadeOut(300, function(){
+            $j('.lookbook_popup').remove();
+          });
+        });
+      });    
+
+    });
+
+  }
+
+  //Mega Menu Sub Category Reveals
+
+  var mmCatHeader = $j('.mmLookbookColumn--links .mmlist li');
+ 
+  mmCatHeader.hoverIntent({
+    sensitivity: 18,
+    over: function(){
+      $j(this).find('.hidden-sub-cat').animate({
+        // 'height': '36px',
+        'opacity': '1'
+      }, 600);
+    },
+    out: function(){
+      $j(this).find('.hidden-sub-cat').animate({
+        // 'height': '0',
+        'opacity': '0'
+      }, 200);
+    }
+  });
 
 
 
