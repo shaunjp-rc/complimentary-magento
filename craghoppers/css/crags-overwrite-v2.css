@@ -6762,3 +6762,10 @@ div.webforms-success-text {
 	}
 
 }
+
+.categoryBanner__image.categoryBanner__image--os{
+	background: url(//d1khwdv4lze0nb.cloudfront.net/images/SS17/category-banners/TopLevel-OS.jpg) no-repeat center;
+}
+.categoryBanner__image.categoryBanner__image--discovery{
+	background: url(//d1khwdv4lze0nb.cloudfront.net/images/SS17/category-banners/Discovery_1228x285pxnew.jpg) no-repeat center;
+}
