@@ -1,3 +1,4 @@
+.page-header:after{background-image: none;}
 .product-shop .product-ids{margin-left: 10px;}
 .headercontainer{padding: 10px;}
 .products-grid > li{margin-bottom: 0;}
