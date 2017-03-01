@@ -37,5 +37,8 @@ $j(document).ready(function($) {
     });  
   }
 
+  var content = jQuery("#advancereviews-filteredReviews").html().split('</span>')[1];
+  jQuery("#advancereviews-filteredReviews").html(content);
+
 
 });
