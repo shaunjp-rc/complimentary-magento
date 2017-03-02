@@ -5341,7 +5341,7 @@ body[class*="cms-lookbook"] .breadcrumbs {
 }
 
 .bannerOverlay__cta--left{
-	margin-left: 7%;
+	margin-left: 7% !important; 
 }
 
 .pageSection--pageTopJustHeading {
