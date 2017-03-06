@@ -2564,6 +2564,8 @@ p.collectionhighlights__hoverstate--header {
 
 .collection__wrapper {
     display: inline-block;
+    float: left;
+    width: 100%;
 }
 
 .collection {
