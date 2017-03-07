@@ -48,12 +48,12 @@ jQuery(window).load(function(){
   //PRODUCT PAGE ALT IMAGE SCROLLER
   var altPos = 0;
   var altArrows = "<span class='altArrow next'>></span><span class='altArrow prev'><</span>";
-  var altItems = jQuery('.MagicToolboxSelectorsContainer .mcs-items-container');
+  var altItems = jQuery('.MagicToolboxSelectorsContainer > div');
 
-  jQuery('.MagicToolboxSelectorsContainer').append(altArrows);
+  /*jQuery('.MagicToolboxSelectorsContainer').append(altArrows);*/
   jQuery('.MagicToolboxSelectorsContainer .altArrow').on('click', function(){
     if (jQuery(this).hasClass('next')){
-      if (altPos < ( jQuery('.mcs-items-container > div').length / 2 - 1 )){
+      if (altPos < ( jQuery('.MagicToolboxSelectorsContainer > div > a').length / 2 - 1 )){
         altPos++;
         altItems.animate({top: (altPos * -100)});
       } else {
@@ -70,6 +70,7 @@ jQuery(window).load(function(){
       }
 
     }
+
   });
 
   //PRODUCT PAGE ALT IMAGE SCROLLER
@@ -152,11 +153,11 @@ jQuery(window).load(function(){
 
   jQuery(".footer-signup a").click(function(){
 
-		var email = jQuery(".footer-signup input").val();
-		var formLocation = "https://www.dare2b.com/emailsignup?email=" + email;
-		window.location = formLocation;
+    var email = jQuery(".footer-signup input").val();
+    var formLocation = "https://www.dare2b.com/emailsignup?email=" + email;
+    window.location = formLocation;
 
-	});
+  });
 
 
 });

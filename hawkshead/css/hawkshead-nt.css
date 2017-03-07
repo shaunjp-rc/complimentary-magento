@@ -3079,11 +3079,19 @@ div#header-account {
     }
 
     .account-cart-wrapper .skip-link {
-        width: 49%;
+        /* width: 80%; */
+    }
+
+    .skip-account{
+        padding-right: 10px;
     }
 
     .header-minicart a.skip-link {
         width: 100%;
+    }
+
+    .skip-cart{
+        padding-left: 10px;
     }
 
     .account-cart-wrapper {
@@ -3105,6 +3113,10 @@ div#header-account {
 
 }
 
+
+
+}
+
 @media screen and (min-width:768px) {
     .skip-link {
         width: 100%;
@@ -3116,10 +3128,6 @@ div#header-account {
 
     .header-minicart a.skip-link {
         width: 100%;
-    }
-
-    .account-cart-wrapper {
-        width: 32%;
     }
 
 }
@@ -3325,6 +3333,13 @@ div#header-account {
 
 }
 
+@media screen and (max-width:736px) {
+    a.logo {
+        width: 25%;
+        min-width: 130px;
+    }
+}
+
 @media screen and (max-width:660px) {
   .flex-direction-nav {
     display: none;
@@ -3347,6 +3362,21 @@ div#header-account {
     margin-right: 0;
   }
 
+}
+
+
+@media screen and (max-width:640px) {
+    a.logo {
+        width: 25%;
+        min-width: 120px;
+    }
+}
+
+@media screen and (max-width:568px) {
+    a.logo {
+        width: 25%;
+        min-width: 110px;
+    }
 }
 
 @media screen and (max-width:550px) {
