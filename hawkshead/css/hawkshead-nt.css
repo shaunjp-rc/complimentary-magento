@@ -2162,7 +2162,7 @@ p.collectionhighlights__hoverstate--header {
 }
 
 .transparentfullwidth--red {
-  background-color: #FC8A81;
+  background-color: #d64846;
 }
 
 .transparentfullwidth--blue {
@@ -2564,6 +2564,8 @@ p.collectionhighlights__hoverstate--header {
 
 .collection__wrapper {
     display: inline-block;
+    float: left;
+    width: 100%;
 }
 
 .collection {
@@ -3045,6 +3047,11 @@ div#header-account {
     .othercontainer,
     .gendercontainer {
         width: 100%;
+    }
+
+    .ms-topmenu .ms-level0.active .ms-label, .ms-topmenu .ms-level0:hover .ms-label, .ms-topmenu .ms-level0:active .ms-label, .ms-topmenu .ms-level0:focus .ms-label, .ms-topmenu .ms-level0:hover .mb-label, .ms-topmenu .ms-level0:active .mb-label, .ms-topmenu .ms-level0:focus .mb-label, .ms-megamenu .mbactive .ms-label, .ms-megamenu .mbactive .mb-return, .ms-megamenu .mbactive .mb-label {
+        background-color: rgba(0,0,0,0);
+        color: #2F2F2F;
     }
 
 }
