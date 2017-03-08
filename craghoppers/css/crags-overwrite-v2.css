@@ -5430,11 +5430,16 @@ h2.pageSection--pageTop__justHeading {
 	background: linear-gradient(to top, #fff 0%, #fff 50%, #ddd 50%, #ddd 100%);
 }
 
+
 .lookbook--tech {
 	background: #fff;
 	background-image: -moz-linear-gradient(left, #fff 0%, #fff 33%, #ddd 33%, #ddd 100%), -moz-linear-gradient(top, #fff 0%, #fff 33%, #ddd 33%, #ddd 100%);
 	background-image: -webkit-linear-gradient(left, #fff 0%, #fff 33%, #ddd 33%, #ddd 100%), -webkit-linear-gradient(top, #fff 0%, #fff 33%, #ddd 33%, #ddd 100%);
 	background-image: linear-gradient(to right, #fff 0%, #fff 33%, transparent 33%, transparent 100%), linear-gradient(to bottom, #fff 0%, #fff 33%, #ddd 33%, #ddd 100%);
+}
+
+.lookbook--tech--upper {
+	background: #ddd;
 }
 
 .lookbook__endcap {
@@ -5490,6 +5495,7 @@ h2.pageSection--pageTop__justHeading {
 	float: left;
 	max-width: 46%;
 	padding-top: 24%;
+	margin-top: -5%;
 }
 
 .lookbook__techBlurb p {
@@ -5508,6 +5514,7 @@ h2.pageSection--pageTop__justHeading {
 
 .lookbook__product img {
 	position: relative;
+	right: 2%;
 	float: left;
 	margin-right: 1%;
 	max-width: 275px;
