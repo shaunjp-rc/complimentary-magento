@@ -6802,3 +6802,9 @@ div.webforms-success-text {
 	background: url(//d1khwdv4lze0nb.cloudfront.net/images/SS17/category-banners/Discovery_1228x285pxnew.jpg) no-repeat center;
 }
 
+.cms-lookbook-outdoor-mens .MagicZoom,
+.cms-lookbook-outdoor-womens .MagicZoom,
+.cms-lookbook-insect-repellent-mens .MagicZoom,
+.cms-lookbook-insect-repellent-womens .MagicZoom {
+    opacity: 1;
+} 
