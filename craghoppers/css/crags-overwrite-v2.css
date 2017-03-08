@@ -5432,7 +5432,7 @@ h2.pageSection--pageTop__justHeading {
 
 
 .lookbook--tech {
-	background: #ddd;
+	background: #fff;
 	background-image: -moz-linear-gradient(left, #fff 0%, #fff 33%, #ddd 33%, #ddd 100%), -moz-linear-gradient(top, #fff 0%, #fff 33%, #ddd 33%, #ddd 100%);
 	background-image: -webkit-linear-gradient(left, #fff 0%, #fff 33%, #ddd 33%, #ddd 100%), -webkit-linear-gradient(top, #fff 0%, #fff 33%, #ddd 33%, #ddd 100%);
 	background-image: linear-gradient(to right, #fff 0%, #fff 33%, transparent 33%, transparent 100%), linear-gradient(to bottom, #fff 0%, #fff 33%, #ddd 33%, #ddd 100%);
