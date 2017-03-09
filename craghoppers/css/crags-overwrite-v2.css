@@ -5356,6 +5356,10 @@ body[class*="cms-lookbook"] .breadcrumbs {
 	margin-left: 7% !important; 
 }
 
+.bannerOverlay__cta--tech{
+	background-color: #fff;
+}
+
 .pageSection--pageTopJustHeading {
 	margin-bottom: 0;
 }
@@ -6526,6 +6530,7 @@ body.customer-account .data-table td a {
 .cms-page-view .std p,
 .cms-no-route .std p {
 	font-family: Helvetica, Arial, sans-serif;
+	width: 80%;
 }
 
 .cms-page-view .std li,
@@ -6807,4 +6812,13 @@ div.webforms-success-text {
 .cms-lookbook-insect-repellent-mens .MagicZoom,
 .cms-lookbook-insect-repellent-womens .MagicZoom {
     opacity: 1;
+
 } 
+
+/* Email Signup Form */
+.redeye-form label {
+	text-transform: uppercase;
+}
+
+/* END */
+
