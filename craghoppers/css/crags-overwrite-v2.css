@@ -6816,9 +6816,39 @@ div.webforms-success-text {
 } 
 
 /* Email Signup Form */
+.cms-page-view.cms-email-sign-up div.breadcrumbs{
+	display: none;
+}
+
 .redeye-form label {
 	text-transform: uppercase;
 }
 
-/* END */
+.redeye-form div {
+	margin-bottom: 10px;
+}
 
+div.cms_page.page-title {
+	padding-top: 10px;
+	margin-bottom: -20px;
+}
+
+.activities h2 {
+	padding-top: 20px;
+}
+
+button.email-form {
+	width: 50%;
+	min-width: 140px;
+}
+
+input[type="checkbox"] {
+	float: left;
+	width: 20px;
+}
+
+input[type="checkbox"] + label {
+	display: block;
+	width: 30px;
+}
+/* END */ 
