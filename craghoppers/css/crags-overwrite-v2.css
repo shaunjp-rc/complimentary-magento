@@ -5356,6 +5356,10 @@ body[class*="cms-lookbook"] .breadcrumbs {
 	margin-left: 7% !important; 
 }
 
+.bannerOverlay__cta--tech{
+	background-color: #fff;
+}
+
 .pageSection--pageTopJustHeading {
 	margin-bottom: 0;
 }
