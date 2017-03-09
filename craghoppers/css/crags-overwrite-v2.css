@@ -6526,6 +6526,7 @@ body.customer-account .data-table td a {
 .cms-page-view .std p,
 .cms-no-route .std p {
 	font-family: Helvetica, Arial, sans-serif;
+	width: 80%;
 }
 
 .cms-page-view .std li,
@@ -6802,4 +6803,16 @@ div.webforms-success-text {
 	background: url(//d1khwdv4lze0nb.cloudfront.net/images/SS17/category-banners/Discovery_1228x285pxnew.jpg) no-repeat center;
 }
 
+.cms-lookbook-outdoor-mens .MagicZoom,
+.cms-lookbook-outdoor-womens .MagicZoom,
+.cms-lookbook-insect-repellent-mens .MagicZoom,
+.cms-lookbook-insect-repellent-womens .MagicZoom {
+    opacity: 1;
+} 
 
+/* Email Signup Form */
+.redeye-form label {
+	text-transform: uppercase;
+}
+
+/* END */
