@@ -2663,7 +2663,7 @@ ul.fullWidthSlider__slidesList {
 	font-family: Helvetica, Arial, sans-serif;
 	font-weight: 700;
 	letter-spacing: 12px;
-	line-height: 1;    /*quotes: "â€œ" "â€" "â€˜" "â€™";*/
+	line-height: 1;    /*quotes: "“" "”" "‘" "’";*/
 }
 
 /*.lev-hero q:before {
@@ -6719,7 +6719,7 @@ div.webforms-success-text {
 	}
 
 .bannerOverlay__subTitle--compressJackets {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif; 
 	font-weight: 400;
 	font-size: 0.9em;
 	}
