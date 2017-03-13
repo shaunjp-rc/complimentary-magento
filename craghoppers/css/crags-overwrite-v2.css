@@ -2029,6 +2029,10 @@ a.micro-product__button {
 
 }
 
+.block-account .block-content ul li:nth-child(6) {
+    display: none;
+}
+
 /********** Sale takeover **************/
 .bannerOverlay__contents--isHover {
 	background-color: rgba(0, 0, 0, 0.5);
