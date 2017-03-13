@@ -2663,7 +2663,7 @@ ul.fullWidthSlider__slidesList {
 	font-family: Helvetica, Arial, sans-serif;
 	font-weight: 700;
 	letter-spacing: 12px;
-	line-height: 1;    /*quotes: "“" "”" "‘" "’";*/
+	line-height: 1;    /*quotes: "â€œ" "â€" "â€˜" "â€™";*/
 }
 
 /*.lev-hero q:before {
@@ -6675,13 +6675,25 @@ div.webforms-success-text {
 .bannerOverlay__title {
 	font-family: Georgia, Times, 'Times New Roman', serif !important;
 	font-weight: 400 !important;
-	font-size: 3.2em;
+	font-size: 3em;
 }
 
 .bannerOverlay__subTitle {
 	font-family: Helvetica, Arial, sans-serif;
 	font-weight: 400;
-	font-size: 1.5em;
+	font-size: 1.1em;
+}
+
+.bannerOverlay__title--compressJackets {
+	font-family: Georgia, Times, 'Times New Roman', serif !important;
+	font-weight: 400 !important;
+	font-size: 3em;
+}
+
+.bannerOverlay__subTitle--compressJackets {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 1.1em;
 }
 
 .bannerOverlay__text {
@@ -6699,13 +6711,44 @@ div.webforms-success-text {
 	font-weight: 400;
 }
 
+@media screen and (max-width: 768px) {
+	.bannerOverlay__title--compressJackets {
+	font-family: Georgia, Times, 'Times New Roman', serif !important;
+	font-weight: 400 !important;
+	font-size: 2em;
+	}
+
+.bannerOverlay__subTitle--compressJackets {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 0.9em;
+	}
+
+}
+
 @media screen and (max-width:560px) {
 	.bannerOverlay__title {
-		font-size: 2.6em;
+		font-size: 1.5em;
 	}
 
 	.bannerOverlay__subTitle {
+		font-size: 1em;
+	}
+
+	.bannerOverlay__cta {
+		font-size: .9em;
+	}
+
+}
+
+@media screen and (max-width:560px) {
+	.bannerOverlay__title--compressJackets {
 		font-size: 1.3em;
+	}
+
+	.bannerOverlay__subTitle--compressJackets {
+		font-size: 0.8em;
+		margin-bottom: 1em;
 	}
 
 	.bannerOverlay__cta {
