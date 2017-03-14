@@ -3049,6 +3049,11 @@ div#header-account {
         width: 100%;
     }
 
+    .ms-topmenu .ms-level0.active .ms-label, .ms-topmenu .ms-level0:hover .ms-label, .ms-topmenu .ms-level0:active .ms-label, .ms-topmenu .ms-level0:focus .ms-label, .ms-topmenu .ms-level0:hover .mb-label, .ms-topmenu .ms-level0:active .mb-label, .ms-topmenu .ms-level0:focus .mb-label, .ms-megamenu .mbactive .ms-label, .ms-megamenu .mbactive .mb-return, .ms-megamenu .mbactive .mb-label {
+        background-color: rgba(0,0,0,0);
+        color: #2F2F2F;
+    }
+
 }
 
 @media screen and (max-width:770px) {

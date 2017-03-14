@@ -5360,6 +5360,10 @@ body[class*="cms-lookbook"] .breadcrumbs {
 	margin-left: 7% !important; 
 }
 
+.bannerOverlay__cta--tech{
+	background-color: #fff;
+}
+
 .pageSection--pageTopJustHeading {
 	margin-bottom: 0;
 }
@@ -6530,6 +6534,7 @@ body.customer-account .data-table td a {
 .cms-page-view .std p,
 .cms-no-route .std p {
 	font-family: Helvetica, Arial, sans-serif;
+	width: 80%;
 }
 
 .cms-page-view .std li,
@@ -6674,13 +6679,25 @@ div.webforms-success-text {
 .bannerOverlay__title {
 	font-family: Georgia, Times, 'Times New Roman', serif !important;
 	font-weight: 400 !important;
-	font-size: 3.2em;
+	font-size: 3em;
 }
 
 .bannerOverlay__subTitle {
 	font-family: Helvetica, Arial, sans-serif;
 	font-weight: 400;
-	font-size: 1.5em;
+	font-size: 1.1em;
+}
+
+.bannerOverlay__title--compressJackets {
+	font-family: Georgia, Times, 'Times New Roman', serif !important;
+	font-weight: 400 !important;
+	font-size: 3em;
+}
+
+.bannerOverlay__subTitle--compressJackets {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 1.1em;
 }
 
 .bannerOverlay__text {
@@ -6698,13 +6715,44 @@ div.webforms-success-text {
 	font-weight: 400;
 }
 
+@media screen and (max-width: 768px) {
+	.bannerOverlay__title--compressJackets {
+	font-family: Georgia, Times, 'Times New Roman', serif !important;
+	font-weight: 400 !important;
+	font-size: 2em;
+	}
+
+.bannerOverlay__subTitle--compressJackets {
+	font-family: Helvetica, Arial, sans-serif; 
+	font-weight: 400;
+	font-size: 0.9em;
+	}
+
+}
+
 @media screen and (max-width:560px) {
 	.bannerOverlay__title {
-		font-size: 2.6em;
+		font-size: 1.5em;
 	}
 
 	.bannerOverlay__subTitle {
+		font-size: 1em;
+	}
+
+	.bannerOverlay__cta {
+		font-size: .9em;
+	}
+
+}
+
+@media screen and (max-width:560px) {
+	.bannerOverlay__title--compressJackets {
 		font-size: 1.3em;
+	}
+
+	.bannerOverlay__subTitle--compressJackets {
+		font-size: 0.8em;
+		margin-bottom: 1em;
 	}
 
 	.bannerOverlay__cta {
@@ -6811,8 +6859,51 @@ div.webforms-success-text {
 .cms-lookbook-insect-repellent-mens .MagicZoom,
 .cms-lookbook-insect-repellent-womens .MagicZoom {
     opacity: 1;
+
 } 
 
 .pageSection p {
     width: 100%;
 }
+
+
+} 
+
+/* Email Signup Form */
+.cms-page-view.cms-email-sign-up div.breadcrumbs{
+	display: none;
+}
+
+.redeye-form label {
+	text-transform: uppercase;
+}
+
+.redeye-form div {
+	margin-bottom: 10px;
+}
+
+div.cms_page.page-title {
+	padding-top: 10px;
+	margin-bottom: -20px;
+}
+
+.activities h2 {
+	padding-top: 20px;
+}
+
+button.email-form {
+	width: 50%;
+	min-width: 140px;
+}
+
+input[type="checkbox"] {
+	float: left;
+	width: 20px;
+}
+
+input[type="checkbox"] + label {
+	display: block;
+	width: 30px;
+}
+/* END */ 
+
