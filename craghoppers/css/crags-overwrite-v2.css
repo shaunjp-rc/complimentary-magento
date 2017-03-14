@@ -67,10 +67,6 @@ p.hello strong {
 	margin-bottom: 17px;
 }
 
-.pageSection p {
-    width: 100%;
-}
-
 @media only screen and (min-width:771px) {
 	.page-header {
 		padding: 0;
@@ -6816,3 +6812,7 @@ div.webforms-success-text {
 .cms-lookbook-insect-repellent-womens .MagicZoom {
     opacity: 1;
 } 
+
+.pageSection p {
+    width: 100%;
+}
