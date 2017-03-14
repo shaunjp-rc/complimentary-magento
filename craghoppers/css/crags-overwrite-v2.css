@@ -67,10 +67,6 @@ p.hello strong {
 	margin-bottom: 17px;
 }
 
-.pageSection p {
-    width: 100%;
-}
-
 @media only screen and (min-width:771px) {
 	.page-header {
 		padding: 0;
@@ -6866,6 +6862,13 @@ div.webforms-success-text {
 
 } 
 
+.pageSection p {
+    width: 100%;
+}
+
+
+} 
+
 /* Email Signup Form */
 .cms-page-view.cms-email-sign-up div.breadcrumbs{
 	display: none;
@@ -6903,3 +6906,4 @@ input[type="checkbox"] + label {
 	width: 30px;
 }
 /* END */ 
+
