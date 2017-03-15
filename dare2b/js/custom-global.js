@@ -50,7 +50,7 @@ jQuery(window).load(function(){
   var altArrows = "<span class='altArrow next'>></span><span class='altArrow prev'><</span>";
   var altItems = jQuery('.MagicToolboxSelectorsContainer > div');
 
-  /*jQuery('.MagicToolboxSelectorsContainer').append(altArrows);*/
+  jQuery('.MagicToolboxSelectorsContainer').append(altArrows);
   jQuery('.MagicToolboxSelectorsContainer .altArrow').on('click', function(){
     if (jQuery(this).hasClass('next')){
       if (altPos < ( jQuery('.MagicToolboxSelectorsContainer > div > a').length / 2 - 1 )){

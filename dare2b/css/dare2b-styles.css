@@ -466,6 +466,7 @@ body .product-options, body .product-options-bottom{display: block !important}
 .MagicToolboxSelectorsContainer .altArrow, .box-related .altArrow{position: absolute; top: 0; left: 0; font-weight: bold; width: 40%; margin: 0 30%; text-align: center; padding: 0px; background: rgba(255,255,255,0.7);
    transform: rotateZ(90deg) scale(1, 1.5); cursor: pointer; color: #111; font-size: 16px; z-index: 99;}
 .MagicToolboxSelectorsContainer .altArrow.next, .box-related .altArrow.next{top: auto; bottom: 0;}
+.MagicToolboxSelectorsContainer > div{position: relative;}
 .more-views .product-image-thumbs::before{content:" ";box-shadow: inset 0px -50px 10px -20px #ffffff;height: 50px;position: absolute;bottom: 0px;width: 100%;max-width: 85px;}
 .more-views .product-image-thumbs li:last-child{margin-bottom: 50px;}
 .block-content li .item-info{width: 100%;height: auto;}
