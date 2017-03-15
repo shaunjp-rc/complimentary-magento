@@ -6863,9 +6863,8 @@ div.webforms-success-text {
 } 
 
 .pageSection p {
-    width: 100%;
+    width: 100% !important;
 }
-
 
 } 
 
